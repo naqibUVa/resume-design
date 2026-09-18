@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Build, theme and export a résumé or academic CV entirely in your browser." />
+    <title>Résumé &amp; CV Builder</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#128196;</text></svg>"
+    />
+
+    <!--
+      App Suite theme system.
+
+      Order matters: tokens, then the switcher's own chrome styling, then the
+      app's stylesheet (pulled in by /src/main.jsx) so app rules win where they
+      have to — the résumé sheet in particular, which must stay ink on paper.
+
+      The paths are relative and resolve against this file, which is the
+      document root both in `vite dev` and in the built `dist/`. Vite treats
+      these as HTML asset references, so it serves them straight from
+      ./shared/ during development and emits hashed copies into dist/assets/
+      on build. That is why there is no public/ directory here: adding one
+      would mean a second, hand-synced copy of files that shared/README.txt
+      says are generated, and it would go stale the first time the suite's
+      sync script ran.
+
+      The switcher is tagged type="module" — Vite refuses to bundle a classic
+      <script src> and leaves the URL pointing at a file it never copies, so
+      the built page would 404. The file itself is a plain IIFE with no
+      imports or exports, which is valid either way; `defer` is redundant on a
+      module and kept only to say what the timing is.
+    -->
+    <script type="module" crossorigin src="./assets/index-CtubNfla.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DmWxjRAu.css">
+  </head>
+  <body class="h-full">
+    <div id="root" class="h-full"></div>
+
+    <!--
+      Blank-page insurance.
+
+      This file is a Vite *source* entry: its only script is a JSX module that
+      the browser cannot compile on its own. Double-clicking it (file://) or
+      serving it without the dev server produces a silent blank page, because
+      the failure is a console error nobody sees.
+
+      So: if the app has not mounted 1.2s after load, replace the blank page
+      with an explanation. main.jsx sets window.__APP_MOUNTED__, and React
+      wipes #root on mount, so this never flashes during a normal start.
+    -->
+    <div id="boot-help" hidden>
+      <style>
+        #boot-help[hidden] { display: none; }
+        #boot-help {
+          position: fixed; inset: 0; overflow: auto; z-index: 9999;
+          background: #f8fafc; color: #0f172a; padding: 2.5rem 1.25rem;
+          font: 15px/1.6 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+        }
+        #boot-help .box { max-width: 42rem; margin: 0 auto; }
+        #boot-help h1 { font-size: 1.35rem; margin: 0 0 .35rem; letter-spacing: -.01em; }
+        #boot-help p.lede { margin: 0 0 1.5rem; color: #475569; }
+        #boot-help h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .09em;
+                        color: #64748b; margin: 1.75rem 0 .6rem; }
+        #boot-help ol { margin: 0; padding-left: 1.25rem; }
+        #boot-help li { margin-bottom: .5rem; }
+        #boot-help code, #boot-help kbd {
+          font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+          background: #e2e8f0; border-radius: 4px; padding: .1em .4em;
+        }
+        #boot-help pre {
+          background: #0f172a; color: #e2e8f0; border-radius: 8px;
+          padding: .9rem 1rem; overflow-x: auto; margin: .5rem 0 0;
+          font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+        #boot-help .why { border-left: 3px solid #cbd5e1; padding-left: .9rem;
+                          color: #475569; font-size: .92rem; }
+        #boot-help .err { border-left: 3px solid #f59e0b; background: #fffbeb;
+                          padding: .7rem .9rem; border-radius: 0 6px 6px 0;
+                          font: 12.5px/1.6 ui-monospace, Menlo, monospace;
+                          color: #78350f; white-space: pre-wrap; word-break: break-word; }
+      </style>
+      <div class="box">
+        <h1>This page needs to be started, not opened</h1>
+        <p class="lede" id="boot-reason">
+          Nothing rendered, which means the app never started.
+        </p>
+
+        <h2>Start it</h2>
+        <ol>
+          <li><strong>macOS:</strong> double-click <code>start.command</code> in this folder.</li>
+          <li><strong>Windows:</strong> double-click <code>start.bat</code>.</li>
+          <li><strong>Linux, or from a terminal anywhere:</strong>
+            <pre>cd "<span id="boot-dir">Resume_design</span>"
+./start.sh</pre>
+          </li>
+        </ol>
+        <p style="margin-top:1rem">
+          The script installs what is missing, starts a local server, and opens the
+          real app in your browser. Leave its window open while you work — closing it
+          stops the server.
+        </p>
+
+        <h2>Why opening the file directly cannot work</h2>
+        <p class="why">
+          <code>index.html</code> loads <code>/src/main.jsx</code>. JSX is not
+          JavaScript a browser understands, and <code>import</code> statements that
+          name a package rather than a file path have no meaning over
+          <code>file://</code>. A build step has to translate both first — that is
+          what the start script runs. There is no version of double-clicking this
+          file that works.
+        </p>
+
+        <h2>Already built it?</h2>
+        <p class="why">
+          Then use the <code>dist/</code> folder, not this file — and still serve it
+          over HTTP rather than opening it, because browsers block module scripts
+          on <code>file://</code>. <code>./start.sh --built</code> does exactly that.
+        </p>
+
+        <div id="boot-error" style="margin-top:1.75rem" hidden>
+          <h2>What the browser reported</h2>
+          <div class="err" id="boot-error-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Capture the real load failure so the panel can show it, rather than
+      // making the user find it in the console.
+      (function () {
+        var firstError = null;
+        window.addEventListener(
+          'error',
+          function (e) {
+            if (firstError) return;
+            firstError = e.message || (e.target && e.target.src ? 'Failed to load ' + e.target.src : null);
+          },
+          true
+        );
+
+        window.setTimeout(function () {
+          if (window.__APP_MOUNTED__) return;
+
+          var help = document.getElementById('boot-help');
+          if (!help) return;
+          help.hidden = false;
+
+          var dir = document.getElementById('boot-dir');
+          if (dir && location.protocol === 'file:') {
+            dir.textContent = decodeURIComponent(location.pathname).replace(/\/index\.html$/, '');
+          }
+
+          var reason = document.getElementById('boot-reason');
+          if (reason) {
+            reason.textContent =
+              location.protocol === 'file:'
+                ? 'You opened this file directly from disk. It is the source entry point of a build — the browser cannot run it as-is.'
+                : 'The page loaded but the app never mounted, so its script did not run.';
+          }
+
+          if (firstError) {
+            document.getElementById('boot-error').hidden = false;
+            document.getElementById('boot-error-text').textContent = firstError;
+          }
+        }, 1200);
+      })();
+    </script>
+
+    <!--
+      Print target. ResumePreview portals a second, un-nested copy of the
+      active theme in here. Screen CSS keeps it hidden; the print stylesheet
+      hides everything else and shows only this. That gives a clean page tree
+      with real text (vector) and live <a href> links in the exported PDF.
+    -->
+    <div id="print-portal"></div>
+
+  </body>
+</html>
