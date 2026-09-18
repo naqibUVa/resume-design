@@ -3,22 +3,22 @@
   "profile": {
     "name": "Naqib Sad Pathan",
     "title": "PhD Candidate · Optimal Transport, Computational Biology, Single Cell Data Analysis",
-    "about": "Doctoral researcher in Electrical Engineering at the University of Virginia advised by Prof. Gustavo K. Rohde in the Imaging and Data Science Laboratory. Research at the intersection of optimal transport, machine learning, mathematical modeling, and computational biology, developing generalizable methods for high-dimensional cellular measurements with applications to flow cytometry, multiplex imaging (4i/cIF), digital pathology, and biomedical discovery.",
+    "about": "Doctoral Researcher in Electrical Engineering, University of Virginia (Expected Graduation: Spring 2027)\n Researcher in the Imaging and Data Science Laboratory under Prof. Gustavo K. Rohde, developing methods at the intersection of optimal transport, machine learning, mathematical modeling, and computational biology. Research focuses on generalizable frameworks for analyzing high-dimensional cellular and subcellular measurements, with applications to flow cytometry, multiplex imaging (4i/cIF), digital pathology, and spatial omics data analysis.",
     "contact": {
       "email": "qpb3vt@virginia.edu",
       "phone": "+1 4347605312",
-      "location": "Charlottesville, VA, USA"
+      "location": "Charlottesvile,VA"
     },
     "links": {
       "website": "https://naqibuva.github.io/academic-portfolio/",
       "github": "https://github.com/naqibUVa",
       "linkedin": "https://www.linkedin.com/in/naqib-sad-pathan",
       "scholar": "https://scholar.google.com/citations?user=NUPZdZoAAAAJ&hl=en",
-      "orcid": "https://orcid.org/0000-0002-1571-8221",
-      "researchgate": "https://www.researchgate.net/profile/Naqib-Sad-Pathan",
+      "orcid": "",
+      "researchgate": "",
       "semanticscholar": "",
       "dblp": "",
-      "arxiv": "https://arxiv.org/abs/2609.17906",
+      "arxiv": "",
       "osf": "",
       "zenodo": "",
       "gitlab": "",
@@ -42,48 +42,75 @@
       "items": [
         "Python",
         "C/C++",
-        "R",
         "MATLAB",
         "JavaScript / TypeScript",
-        "Bash scripting"
+        "Bash",
+        "Git"
       ],
       "include": true
     },
     {
       "id": "sk-ml",
-      "category": "Machine Learning & Mathematical Methods",
+      "category": "Machine Learning & AI",
       "items": [
-        "Optimal Transport",
-        "Linear Optimal Transport (LOT)",
-        "Transport-Based Morphometry (TBM)",
         "PyTorch",
         "Scikit-learn",
-        "High-Dimensional Statistics"
+        "High-Dimensional Statistics",
+        "Deep Learning",
+        "Pointnet++",
+        "DGCNN",
+        "Deepsets",
+        "Optimal Transport",
+        "Large Language Model(LLM)"
       ],
       "include": true
     },
     {
       "id": "sk-bio",
-      "category": "Computational Biology & Imaging",
+      "category": "AI Engineering & Developer Tools",
       "items": [
-        "Iterative Indirect Immunofluorescence (4i)",
-        "Cyclic Immunofluorescence (cIF)",
-        "Spatial Proteomics",
-        "Flow Cytometry",
-        "Measurable Residual Disease (MRD)",
-        "Digital Pathology (WSI)"
+        "OpenCode",
+        "Aider",
+        "Ollama",
+        "Local LLM Deployment",
+        "Agentic AI Workflows",
+        "Prompt Engineering",
+        "VS Code",
+        "Antigravity",
+        "Jupyter Notebook"
       ],
       "include": true
     },
     {
       "id": "sk-systems",
-      "category": "Systems & Tooling",
+      "category": "HPC & Systems",
       "items": [
-        "Git",
         "Linux",
+        "Slurm",
+        "UVA Rivanna HPC",
+        "GPU Computing",
+        "Parallel & Distributed Computing",
+        "Remote Development",
+        "Batch Processing",
+        "Environment Management",
         "Docker",
-        "HPC / Slurm",
-        "LaTeX"
+        "SSH"
+      ],
+      "include": true
+    },
+    {
+      "id": "sk-mu6m8e05-2",
+      "category": "Imaging and Biomedical Data Analysis",
+      "items": [
+        "Flow Cytometry",
+        "Multiplex Imaging (4i/cIF)",
+        "Digital Pathology",
+        "Spatial Transcriptomics",
+        "Proteomics",
+        "PPG",
+        "EEG",
+        "Brain Image",
+        "Image Processing"
       ],
       "include": true
     }
@@ -94,13 +121,24 @@
       "role": "Graduate Research Assistant",
       "company": "Imaging and Data Science Laboratory (Rohde Lab), University of Virginia",
       "location": "Charlottesville, VA",
-      "start": "2022",
+      "start": "August 2022",
       "end": "Present",
       "current": true,
       "bullets": [
-        "Conduct research on optimal transport theory, transport-based morphometry (TBM), and mathematical machine learning frameworks for multiplex imaging and high-dimensional single-cell measurements.",
-        "Formulate FlowLOT for flow cytometry data, achieving state-of-the-art continuous quantitative prediction of measurable residual disease (MRD) in acute myeloid leukemia (AML).",
-        "Lead computational analysis for high-plex iterative indirect immunofluorescence imaging (4i) to map metaphase chromosome spatial architecture and chromosome passenger complex (CPC) dynamics during mitosis."
+        ""
+      ],
+      "include": true
+    },
+    {
+      "id": "ex-mu6k7osi-6",
+      "role": "Trainee",
+      "company": "The Systems Analysis of Stress-adapted Cancer Organelles (SASCO) Center",
+      "location": "University of Virginia",
+      "start": "August 2023",
+      "end": "Present",
+      "current": true,
+      "bullets": [
+        ""
       ],
       "include": true
     },
@@ -113,8 +151,7 @@
       "end": "",
       "current": false,
       "bullets": [
-        "Developed computational autofluorescence correction methods for cyclic immunofluorescence imaging (4i/cIF technique) on Lunaphore COMET to enhance signal fidelity and multiplex biomarker quantification.",
-        "Implemented image restoration and quantitative single-cell feature extraction pipelines across complex tissue microenvironments."
+        ""
       ],
       "include": true
     },
@@ -123,12 +160,11 @@
       "role": "Lecturer / Assistant Professor",
       "company": "Chittagong University of Engineering and Technology (CUET)",
       "location": "Chittagong, Bangladesh",
-      "start": "2016-04",
-      "end": "2022-08",
+      "start": "April 2016",
+      "end": "August 2022",
       "current": false,
       "bullets": [
-        "Taught undergraduate courses in Digital Signal Processing, Signals and Systems, VLSI Technology, and Microprocessors & Interfacing.",
-        "Mentored student research projects and directed laboratory sessions in biomedical signal processing, embedded systems, and computer vision (on study leave for doctoral studies since August 2022)."
+        ""
       ],
       "include": true
     }
@@ -148,7 +184,7 @@
       "id": "ed-2",
       "degree": "MSc in Electrical and Electronic Engineering",
       "institution": "Chittagong University of Engineering and Technology (CUET)",
-      "location": "Chittagong, Bangladesh",
+      "location": "",
       "start": "2016",
       "end": "2021",
       "detail": "CGPA: 3.71",
@@ -158,7 +194,7 @@
       "id": "ed-3",
       "degree": "BSc in Electrical and Electronic Engineering",
       "institution": "Bangladesh University of Engineering and Technology (BUET)",
-      "location": "Dhaka, Bangladesh",
+      "location": "",
       "start": "2010",
       "end": "2015",
       "detail": "CGPA: 3.81",
@@ -168,8 +204,8 @@
   "projects": [
     {
       "id": "pr-1",
-      "title": "FlowLOT: Optimal Transport for Single-Cell Measurements & AML MRD Prediction",
-      "description": "FlowLOT is an optimal transport-based framework that represents patient-derived single-cell measurements as empirical cellular distributions and maps them into fixed-length feature embeddings. Unifies high-dimensional classification, interpretable visualization, and continuous quantitative prediction, including measurable residual disease (MRD) estimation in acute myeloid leukemia (AML), within a transparent and mathematically interpretable architecture.",
+      "title": "FlowLOT: Linearized Optimal Transport for Flow Cytometry Analysis",
+      "description": "Developed FlowLOT, an optimal transport-based framework that represents patient-level flow cytometry measurements as discrete probability distributions and maps them into compact, fixed-length embeddings. The framework enables interpretable analysis of high-dimensional single-cell data, supporting classification, visualization, and continuous outcome prediction within a unified mathematical framework. Demonstrated its utility for measurable residual disease (MRD) estimation in acute myeloid leukemia (AML), achieving transparent and biologically interpretable patient-level modeling.",
       "tech": [
         "Optimal Transport",
         "Linear Optimal Transport",
@@ -178,7 +214,10 @@
         "Computational Hematology",
         "AML",
         "Python",
-        "HPC"
+        "HPC",
+        "Deepsets",
+        "Pointnet++",
+        "DGCNN"
       ],
       "demo": "",
       "source": "https://github.com/naqibUVa/FlowLOT_v1",
@@ -222,15 +261,16 @@
     },
     {
       "id": "pr-4",
-      "title": "Computational Autofluorescence Correction for Cyclic Immunofluorescence (cIF)",
-      "description": "High-plex cyclic immunofluorescence (cIF) experiments are often affected by tissue autofluorescence and imaging artifacts that distort downstream biological measurements. Developed computational and machine-learning approaches for autofluorescence correction, image restoration, and quantitative analysis of spatial proteomics data on Lunaphore COMET.",
+      "title": "Computational Autofluorescence Correction for Cyclic Immunofluorescence (Genentech Summer Internship Project)",
+      "description": "Designed and implemented scalable computational imaging workflows for autofluorescence correction, artifact removal, and image restoration in high-plex cIF experiments. Leveraged Zarr-based storage, Dask, and parallel/distributed computing to analyze terabyte-scale whole-slide and TMA proteomics and spatial transcriptomics datasets generated on the Lunaphore COMET platform.",
       "tech": [
-        "Cyclic Immunofluorescence",
         "Multiplex Imaging",
         "Spatial Proteomics",
-        "Image Processing",
         "Single-Cell Analysis",
-        "Python"
+        "Python",
+        "Cyclic-IF",
+        "Dask",
+        "Zarr"
       ],
       "demo": "",
       "source": "",
@@ -253,7 +293,7 @@
       "demo": "",
       "source": "",
       "paper": "https://doi.org/10.1007/s42979-023-02173-6",
-      "include": true
+      "include": false
     }
   ],
   "publications": [
@@ -265,12 +305,36 @@
       "kind": "journal",
       "title": "Linear Optimal Transport Subspaces for Point Set Classification",
       "authors": [
-        { "first": "Mohammad", "last": "Shifat-E-Rabbi", "full": "Mohammad Shifat-E-Rabbi" },
-        { "first": "Naqib Sad", "last": "Pathan", "full": "Naqib Sad Pathan" },
-        { "first": "Shiying", "last": "Li", "full": "Shiying Li" },
-        { "first": "Yan", "last": "Zhuang", "full": "Yan Zhuang" },
-        { "first": "Abu Hasnat Mohammad", "last": "Rubaiyat", "full": "Abu Hasnat Mohammad Rubaiyat" },
-        { "first": "Gustavo K.", "last": "Rohde", "full": "Gustavo K. Rohde" }
+        {
+          "first": "Mohammad",
+          "last": "Shifat-E-Rabbi",
+          "full": "Mohammad Shifat-E-Rabbi"
+        },
+        {
+          "first": "Naqib Sad",
+          "last": "Pathan",
+          "full": "Naqib Sad Pathan"
+        },
+        {
+          "first": "Shiying",
+          "last": "Li",
+          "full": "Shiying Li"
+        },
+        {
+          "first": "Yan",
+          "last": "Zhuang",
+          "full": "Yan Zhuang"
+        },
+        {
+          "first": "Abu Hasnat Mohammad",
+          "last": "Rubaiyat",
+          "full": "Abu Hasnat Mohammad Rubaiyat"
+        },
+        {
+          "first": "Gustavo K.",
+          "last": "Rohde",
+          "full": "Gustavo K. Rohde"
+        }
       ],
       "editors": [],
       "venue": "Journal of Mathematical Imaging and Vision",
@@ -294,13 +358,41 @@
       "kind": "journal",
       "title": "Quantifying Nuclear Structures of Digital Pathology Images Across Cancers Using Transport-Based Morphometry",
       "authors": [
-        { "first": "Mohammad", "last": "Shifat-E-Rabbi", "full": "Mohammad Shifat-E-Rabbi" },
-        { "first": "Natasha", "last": "Ironside", "full": "Natasha Ironside" },
-        { "first": "Naqib Sad", "last": "Pathan", "full": "Naqib Sad Pathan" },
-        { "first": "John A.", "last": "Ozolek", "full": "John A. Ozolek" },
-        { "first": "Rajendra", "last": "Singh", "full": "Rajendra Singh" },
-        { "first": "Liron", "last": "Pantanowitz", "full": "Liron Pantanowitz" },
-        { "first": "Gustavo K.", "last": "Rohde", "full": "Gustavo K. Rohde" }
+        {
+          "first": "Mohammad",
+          "last": "Shifat-E-Rabbi",
+          "full": "Mohammad Shifat-E-Rabbi"
+        },
+        {
+          "first": "Natasha",
+          "last": "Ironside",
+          "full": "Natasha Ironside"
+        },
+        {
+          "first": "Naqib Sad",
+          "last": "Pathan",
+          "full": "Naqib Sad Pathan"
+        },
+        {
+          "first": "John A.",
+          "last": "Ozolek",
+          "full": "John A. Ozolek"
+        },
+        {
+          "first": "Rajendra",
+          "last": "Singh",
+          "full": "Rajendra Singh"
+        },
+        {
+          "first": "Liron",
+          "last": "Pantanowitz",
+          "full": "Liron Pantanowitz"
+        },
+        {
+          "first": "Gustavo K.",
+          "last": "Rohde",
+          "full": "Gustavo K. Rohde"
+        }
       ],
       "editors": [],
       "venue": "Cytometry Part A",
@@ -324,10 +416,26 @@
       "kind": "journal",
       "title": "Heart Rate Estimation from Wrist PPG Signal During Intense Physical Exercise",
       "authors": [
-        { "first": "Kamrul", "last": "Hasan", "full": "Kamrul Hasan" },
-        { "first": "Mehdi Hasan", "last": "Chowdhury", "full": "Mehdi Hasan Chowdhury" },
-        { "first": "Naqib Sad", "last": "Pathan", "full": "Naqib Sad Pathan" },
-        { "first": "Quazi Delwar", "last": "Hossain", "full": "Quazi Delwar Hossain" }
+        {
+          "first": "Kamrul",
+          "last": "Hasan",
+          "full": "Kamrul Hasan"
+        },
+        {
+          "first": "Mehdi Hasan",
+          "last": "Chowdhury",
+          "full": "Mehdi Hasan Chowdhury"
+        },
+        {
+          "first": "Naqib Sad",
+          "last": "Pathan",
+          "full": "Naqib Sad Pathan"
+        },
+        {
+          "first": "Quazi Delwar",
+          "last": "Hossain",
+          "full": "Quazi Delwar Hossain"
+        }
       ],
       "editors": [],
       "venue": "SN Computer Science",
@@ -351,8 +459,16 @@
       "kind": "other",
       "title": "FlowLOT: Continuous Quantification and Measurable Residual Disease Prediction in Flow Cytometry",
       "authors": [
-        { "first": "Naqib Sad", "last": "Pathan", "full": "Naqib Sad Pathan" },
-        { "first": "Gustavo K.", "last": "Rohde", "full": "Gustavo K. Rohde" }
+        {
+          "first": "Naqib Sad",
+          "last": "Pathan",
+          "full": "Naqib Sad Pathan"
+        },
+        {
+          "first": "Gustavo K.",
+          "last": "Rohde",
+          "full": "Gustavo K. Rohde"
+        }
       ],
       "editors": [],
       "venue": "arXiv preprint",
@@ -426,7 +542,7 @@
       "id": "te-1",
       "include": true,
       "course": "Digital Signal Processing",
-      "role": "Instructor",
+      "role": "instructor",
       "institution": "Chittagong University of Engineering and Technology (CUET)",
       "term": "2016 – 2022",
       "level": "Undergraduate",
@@ -440,7 +556,7 @@
       "id": "te-2",
       "include": true,
       "course": "Signals and Systems",
-      "role": "Instructor",
+      "role": "instructor",
       "institution": "Chittagong University of Engineering and Technology (CUET)",
       "term": "2016 – 2022",
       "level": "Undergraduate",
@@ -453,7 +569,7 @@
       "id": "te-3",
       "include": true,
       "course": "Microprocessors and Interfacing",
-      "role": "Instructor",
+      "role": "instructor",
       "institution": "Chittagong University of Engineering and Technology (CUET)",
       "term": "2016 – 2022",
       "level": "Undergraduate",
@@ -466,7 +582,7 @@
       "id": "te-4",
       "include": true,
       "course": "VLSI Technology",
-      "role": "Instructor",
+      "role": "instructor",
       "institution": "Chittagong University of Engineering and Technology (CUET)",
       "term": "2016 – 2022",
       "level": "Undergraduate",
@@ -546,17 +662,48 @@
     }
   ],
   "volunteering": [],
-  "references": [],
+  "references": [
+    {
+      "id": "ref-mu6hvzzs-2",
+      "include": true,
+      "name": "Gustavo Kunde Rohde",
+      "position": "Professor at BME and ECE",
+      "organisation": "University of Virginia",
+      "relationship": "Advisor",
+      "email": "gustavo@virginia.edu",
+      "phone": "Website: https://www.imagedatascience.com/"
+    },
+    {
+      "id": "ref-mu6j3muz-2",
+      "include": true,
+      "name": "Kevin Janes",
+      "position": "Professor, Biomedical Engineering",
+      "organisation": "University of Virginia",
+      "relationship": "Research Core, SASCO",
+      "email": "kjanes@virginia.edu",
+      "phone": "Website: https://systemsbioe.org/"
+    },
+    {
+      "id": "ref-mu6j6o5m-4",
+      "include": true,
+      "name": "Todd Stukenberg",
+      "position": " Professor, Biochemistry and Molecular Genetics",
+      "organisation": "University of Virginia",
+      "relationship": "Research Core, SASCO",
+      "email": "pts7h@virginia.edu",
+      "phone": "Website: https://toddstuke.wixsite.com/stukelab"
+    }
+  ],
   "settings": {
     "theme": "compact",
-    "accent": "#4f46e5",
+    "accent": "#b6073f",
     "density": "normal",
     "showPhotoPlaceholder": false,
-    "pageSize": "letter",
-    "pageMargin": "normal",
+    "pageSize": "a4",
+    "pageMargin": "narrow",
     "fontPair": "garamond",
     "fontHead": "helvetica",
-    "fontScale": 1.06,
+    "fontScale": 1,
     "linkStyle": "name",
     "showIcons": true,
     "showMonogram": true,
@@ -571,26 +718,39 @@
       "teaching",
       "service",
       "memberships",
-      "languages"
+      "languages",
+      "awards",
+      "grants",
+      "supervision",
+      "editorial",
+      "organised",
+      "datasets",
+      "media",
+      "development",
+      "conferences",
+      "certifications",
+      "patents",
+      "volunteering",
+      "references"
     ],
     "sections": {
       "about": true,
       "education": true,
       "experience": true,
       "projects": true,
-      "publications": true,
+      "publications": false,
       "skills": true,
-      "talks": true,
-      "teaching": true,
-      "service": true,
-      "memberships": true,
-      "languages": true,
+      "talks": false,
       "awards": false,
       "grants": false,
+      "teaching": false,
+      "service": false,
+      "memberships": false,
       "certifications": false,
       "patents": false,
+      "languages": false,
       "volunteering": false,
-      "references": false,
+      "references": true,
       "supervision": false,
       "editorial": false,
       "organised": false,

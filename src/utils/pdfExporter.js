@@ -147,12 +147,21 @@ export async function exportToPdf(options = {}) {
   }
 
   const originalTitle = document.title;
+  const html = document.documentElement;
+  const prevMode = html.getAttribute('data-mode');
+  const prevColorScheme = html.style.colorScheme;
+  const prevBg = document.body.style.backgroundColor;
 
   try {
     if (typeof onBefore === 'function') onBefore();
 
     // Chrome/Edge seed the Save-as-PDF filename from document.title.
     if (filename) document.title = filename;
+
+    // Force light mode so Chrome's print canvas never renders dark or black page margins
+    html.setAttribute('data-mode', 'light');
+    html.style.colorScheme = 'light';
+    document.body.style.backgroundColor = '#ffffff';
 
     await waitForFonts();
     await new Promise((r) => setTimeout(r, settleMs));
@@ -166,6 +175,13 @@ export async function exportToPdf(options = {}) {
     return { ok: false, reason: err && err.message ? err.message : 'Printing failed.' };
   } finally {
     document.title = originalTitle;
+    if (prevMode) {
+      html.setAttribute('data-mode', prevMode);
+    } else {
+      html.removeAttribute('data-mode');
+    }
+    html.style.colorScheme = prevColorScheme;
+    document.body.style.backgroundColor = prevBg;
     if (typeof onAfter === 'function') onAfter();
   }
 }

@@ -32,7 +32,7 @@ import { byDensity } from './themeHelpers.js';
 import { fontAttrs, fontVars } from '../../data/fontStacks.js';
 
 /** `\keyalignment{r}` column. Slightly wider than Swish's, to carry sub-labels. */
-const KEY_COL = '1.25in';
+const KEY_COL = '1.45in';
 const GAP = '0.18in';
 /** Where the content column starts — used to indent anything with no key. */
 const INDENT = `calc(${KEY_COL} + ${GAP})`;

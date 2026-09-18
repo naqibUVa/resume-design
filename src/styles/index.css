@@ -276,14 +276,19 @@
 @page {
   size: Letter portrait;
   margin: 0.75in;
+  background: #ffffff !important;
 }
 
 @media print {
+  :root,
   html,
   body {
     height: auto !important;
     overflow: visible !important;
-    background: #fff !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    color-scheme: light !important;
   }
 
   /* Hide the entire application shell, show only the portal. */

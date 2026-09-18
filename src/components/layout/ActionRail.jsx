@@ -26,6 +26,7 @@ import { useEffect, useRef, useState } from 'react';
 import {
   Download,
   Eye,
+  FileCode,
   FileDown,
   FileUp,
   Loader2,
@@ -43,6 +44,7 @@ import {
 import { useResume } from '../../context/ResumeContext.jsx';
 import { downloadFile, readFileAsText, suggestFilename } from '../../utils/storage';
 import { exportToPdf } from '../../utils/pdfExporter';
+import { generateLatex } from '../../utils/latexExporter';
 
 /**
  * One icon-only rail button.
@@ -134,7 +136,7 @@ function RailDivider() {
  * @returns {JSX.Element}
  */
 export default function ActionRail({ mobileView, onMobileViewChange, railOpen, onRailToggle }) {
-  const { resume, exportJson, importJson, notify, undo, redo, resetAll } = useResume();
+  const { resume, visible, exportJson, importJson, notify, undo, redo, resetAll } = useResume();
 
   const fileRef = useRef(null);
   const [printing, setPrinting] = useState(false);
@@ -243,6 +245,24 @@ export default function ActionRail({ mobileView, onMobileViewChange, railOpen, o
       <RailDivider />
 
       <RailButton icon={FileDown} label="Export JSON" onClick={handleExport} />
+      <RailButton
+        icon={FileCode}
+        label="Copy / Export LaTeX (.tex)"
+        onClick={async () => {
+          try {
+            const tex = generateLatex(resume, visible);
+            await navigator.clipboard.writeText(tex);
+            const filename = `${suggestFilename(resume.profile?.name || 'resume', 'cv')}.tex`;
+            downloadFile(tex, filename, 'text/x-tex');
+            notify?.(`Copied LaTeX to clipboard & downloaded ${filename} (all 10 themes included)`, 'success');
+          } catch (err) {
+            const tex = generateLatex(resume, visible);
+            const filename = `${suggestFilename(resume.profile?.name || 'resume', 'cv')}.tex`;
+            downloadFile(tex, filename, 'text/x-tex');
+            notify?.(`Saved ${filename} (all 10 themes included) to downloads`, 'success');
+          }
+        }}
+      />
       <RailButton icon={FileUp} label="Import JSON" onClick={() => fileRef.current?.click()} />
       <input
         ref={fileRef}

@@ -21,9 +21,11 @@
  */
 
 import { useState } from 'react';
-import { Check, ChevronDown, FileText, Heading, Link2, Palette, Ruler, Scaling, Type } from 'lucide-react';
+import { Check, ChevronDown, Copy, FileCode, FileText, Heading, Link2, Palette, Ruler, Scaling, Type } from 'lucide-react';
 
 import { THEMES, THEME_FAMILIES, useResume } from '../../context/ResumeContext.jsx';
+import { generateLatex, generateLatexPackage } from '../../utils/latexExporter.js';
+import { downloadFile, suggestFilename } from '../../utils/storage.js';
 import {
   FONT_PAIRS,
   FONT_PAIR_BY_ID,
@@ -272,7 +274,44 @@ function Picker({ icon: Icon, label, title, value, onChange, width = '', childre
  * @returns {JSX.Element}
  */
 export default function ThemeSelector() {
-  const { resume, setTheme, setSetting } = useResume();
+  const { resume, visible, notify, setTheme, setSetting } = useResume();
+  const [copiedLatex, setCopiedLatex] = useState(false);
+
+  const handleCopyLatex = async () => {
+    try {
+      const tex = generateLatex(resume, visible);
+      await navigator.clipboard.writeText(tex);
+      setCopiedLatex(true);
+      notify?.('LaTeX (.tex) document copied to clipboard!', 'success');
+      setTimeout(() => setCopiedLatex(false), 2500);
+    } catch (err) {
+      notify?.('Could not copy to clipboard: ' + err.message, 'error');
+    }
+  };
+
+  const handleDownloadLatex = () => {
+    const tex = generateLatex(resume, visible);
+    const filename = `${suggestFilename(resume.profile?.name || 'resume', 'cv')}.tex`;
+    downloadFile(tex, filename, 'text/x-tex');
+    notify?.(`Saved ${filename} with all 10 theme styles to downloads.`, 'success');
+  };
+
+  const handleDownloadSty = () => {
+    const pkg = generateLatexPackage(resume, visible);
+    downloadFile(pkg.styContent, 'resume-theme.sty', 'text/x-tex');
+    notify?.('Saved separate theme style file (resume-theme.sty) to downloads.', 'success');
+  };
+
+  const handleDownloadModular = () => {
+    const pkg = generateLatexPackage(resume, visible);
+    const texName = `${pkg.filenameBase || 'resume'}.tex`;
+    const styName = 'resume-theme.sty';
+    downloadFile(pkg.texContent, texName, 'text/x-tex');
+    setTimeout(() => {
+      downloadFile(pkg.styContent, styName, 'text/x-tex');
+    }, 250);
+    notify?.(`Saved modular package (${texName} + ${styName}) to downloads!`, 'success');
+  };
   const {
     theme,
     accent,
@@ -334,6 +373,46 @@ export default function ThemeSelector() {
             className={`transition-transform ${showGrid ? 'rotate-180' : ''}`}
           />
           {showGrid ? 'Hide' : 'Browse'} layouts
+        </button>
+
+        <button
+          type="button"
+          onClick={handleCopyLatex}
+          className="btn btn-ghost btn-xs flex-none gap-1 font-mono text-ui-accent hover:bg-ui-accent-soft"
+          title="Copy compilable LaTeX (.tex) with all 10 theme styles (active theme uncommented) to clipboard"
+        >
+          {copiedLatex ? <Check size={13} className="text-ui-success" /> : <Copy size={13} />}
+          {copiedLatex ? 'Copied .tex!' : 'Copy LaTeX (.tex)'}
+        </button>
+
+        <button
+          type="button"
+          onClick={handleDownloadLatex}
+          className="btn btn-ghost btn-xs flex-none gap-1 text-ui-muted hover:text-ui-text"
+          title="Download standalone .tex LaTeX document with all 10 themes embedded (active theme uncommented)"
+        >
+          <FileCode size={13} />
+          .tex
+        </button>
+
+        <button
+          type="button"
+          onClick={handleDownloadSty}
+          className="btn btn-ghost btn-xs flex-none gap-1 text-ui-muted hover:text-ui-text"
+          title="Download separate theme style file (resume-theme.sty) containing all 10 themes"
+        >
+          <FileCode size={13} />
+          .sty
+        </button>
+
+        <button
+          type="button"
+          onClick={handleDownloadModular}
+          className="btn btn-ghost btn-xs flex-none gap-1 text-ui-muted hover:text-ui-text"
+          title="Download modular package: document (resume.tex) + theme styles (resume-theme.sty)"
+        >
+          <FileCode size={13} />
+          Modular (.tex + .sty)
         </button>
       </div>
 

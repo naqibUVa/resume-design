@@ -53,7 +53,7 @@ const SWISH = '#b7cd6d';
 /** `MarkerColour!80!black`, which is the only form the .sty ever uses. */
 const MARKER = '#920532';
 /** `\keyalignment{r}` — the right-aligned date column. */
-const KEY_COL = '1.15in';
+const KEY_COL = '1.45in';
 
 /**
  * @param {{resume: Object, visible: Object}} props
@@ -91,9 +91,9 @@ export default function SwishTheme({ resume, visible }) {
       <div className="pt-[1px] text-right text-[calc(8.6pt*var(--rf-fs,1))] leading-[1.35] text-ink-700">{e.meta}</div>
 
       <div className="min-w-0">
-        <div className="flex items-baseline gap-[0.5em]">
+        <div className="flex items-baseline gap-[0.4em]">
           {showIcons && (
-            <span className="-ml-[1.1em] flex-none self-start pt-[0.18em]" style={{ color: MARKER }}>
+            <span className="flex-none self-start pt-[0.18em]" style={{ color: MARKER }}>
               <Glyph icon={Bookmark} size="0.78em" />
             </span>
           )}

@@ -302,6 +302,7 @@ export function pageSetupCss(geom) {
 @page {
   size: ${size.css} portrait;
   margin: ${topIn}in ${sideIn}in ${bottomIn}in ${sideIn}in;
+  background: #ffffff !important;
 }
 
 /* Page one differs only for full-bleed themes, where the band or rail is meant
@@ -311,12 +312,22 @@ export function pageSetupCss(geom) {
 }
 
 @media print {
+  :root,
+  html,
+  body {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    color-scheme: light !important;
+  }
+
   /* Margins are the page box's job now; padding here as well would double the
      first page's and leave every other page with none. */
   .resume-paper {
     width: auto !important;
     min-height: 0 !important;
     padding: 0 !important;
+    background: #ffffff !important;
   }
 }
 `;

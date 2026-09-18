@@ -2,18 +2,18 @@
   "schemaVersion": 2,
   "profile": {
     "name": "Naqib Sad Pathan",
-    "title": "PhD Candidate · Optimal Transport, Computational Biology, Single Cell Data Analysis ",
-    "about": "Doctoral researcher at the intersection of optimal transport, machine learning, mathematical modeling, and computational biology, developing generalizable methods for high-dimensional cellular measurements with applications to flow cytometry, multiplex imaging, and biomedical discovery.",
+    "title": "PhD Candidate · Optimal Transport, Computational Biology, Single Cell Data Analysis",
+    "about": "Doctoral Researcher in Electrical Engineering, University of Virginia (Expected Graduation: Spring 2027)\n Researcher in the Imaging and Data Science Laboratory under Prof. Gustavo K. Rohde, developing methods at the intersection of optimal transport, machine learning, mathematical modeling, and computational biology. Research focuses on generalizable frameworks for analyzing high-dimensional cellular and subcellular measurements, with applications to flow cytometry, multiplex imaging (4i/cIF), digital pathology, and spatial omics data analysis.",
     "contact": {
       "email": "qpb3vt@virginia.edu",
       "phone": "+1 4347605312",
-      "location": "Charlottesville, VA, USA"
+      "location": "Charlottesvile,VA"
     },
     "links": {
-      "website": "",
+      "website": "https://naqibuva.github.io/academic-portfolio/",
       "github": "https://github.com/naqibUVa",
-      "linkedin": "https://www.linkedin.com/in/naqib-sad-pathan-4b0871286/",
-      "scholar": "https://scholar.google.com/citations?hl=en&user=NUPZdZoAAAAJ",
+      "linkedin": "https://www.linkedin.com/in/naqib-sad-pathan",
+      "scholar": "https://scholar.google.com/citations?user=NUPZdZoAAAAJ&hl=en",
       "orcid": "",
       "researchgate": "",
       "semanticscholar": "",
@@ -41,53 +41,101 @@
       "category": "Languages",
       "items": [
         "Python",
-        "C++",
+        "C/C++",
+        "MATLAB",
         "JavaScript / TypeScript",
-        "MATLAB"
+        "Bash",
+        "Git"
       ],
       "include": true
     },
     {
       "id": "sk-ml",
-      "category": "Machine Learning",
+      "category": "Machine Learning & AI",
       "items": [
         "PyTorch",
-        "Hugging Face",
-        "CUDA"
+        "Scikit-learn",
+        "High-Dimensional Statistics",
+        "Deep Learning",
+        "Pointnet++",
+        "DGCNN",
+        "Deepsets",
+        "Optimal Transport",
+        "Large Language Model(LLM)"
+      ],
+      "include": true
+    },
+    {
+      "id": "sk-bio",
+      "category": "AI Engineering & Developer Tools",
+      "items": [
+        "OpenCode",
+        "Aider",
+        "Ollama",
+        "Local LLM Deployment",
+        "Agentic AI Workflows",
+        "Prompt Engineering",
+        "VS Code",
+        "Antigravity",
+        "Jupyter Notebook"
       ],
       "include": true
     },
     {
       "id": "sk-systems",
-      "category": "Systems & Tooling",
+      "category": "HPC & Systems",
       "items": [
-        "Git",
         "Linux",
+        "Slurm",
+        "UVA Rivanna HPC",
+        "GPU Computing",
+        "Parallel & Distributed Computing",
+        "Remote Development",
+        "Batch Processing",
+        "Environment Management",
         "Docker",
-        "Bash scripting"
+        "SSH"
       ],
       "include": true
     },
     {
-      "id": "sk-research",
-      "category": "Research",
+      "id": "sk-mu6m8e05-2",
+      "category": "Imaging and Biomedical Data Analysis",
       "items": [
-        "Experimental design",
-        "LaTeX",
-        "Peer review",
-        "Technical writing"
+        "Flow Cytometry",
+        "Multiplex Imaging (4i/cIF)",
+        "Digital Pathology",
+        "Spatial Transcriptomics",
+        "Proteomics",
+        "PPG",
+        "EEG",
+        "Brain Image",
+        "Image Processing"
       ],
-      "include": false
+      "include": true
     }
   ],
   "experience": [
     {
       "id": "ex-1",
       "role": "Graduate Research Assistant",
-      "company": "University Systems & Learning Lab",
+      "company": "Imaging and Data Science Laboratory (Rohde Lab), University of Virginia",
       "location": "Charlottesville, VA",
-      "start": "2022",
-      "end": "7",
+      "start": "August 2022",
+      "end": "Present",
+      "current": true,
+      "bullets": [
+        ""
+      ],
+      "include": true
+    },
+    {
+      "id": "ex-mu6k7osi-6",
+      "role": "Trainee",
+      "company": "The Systems Analysis of Stress-adapted Cancer Organelles (SASCO) Center",
+      "location": "University of Virginia",
+      "start": "August 2023",
+      "end": "Present",
       "current": true,
       "bullets": [
         ""
@@ -96,9 +144,9 @@
     },
     {
       "id": "ex-2",
-      "role": "Research Intern, Digital Pathology",
+      "role": "Research Intern — Spatial Proteomics / Computational Biology",
       "company": "Genentech",
-      "location": "South San Francisco",
+      "location": "South San Francisco, CA",
       "start": "Summer 2026",
       "end": "",
       "current": false,
@@ -109,11 +157,11 @@
     },
     {
       "id": "ex-3",
-      "role": "Lecturer and then Assistant Professor",
-      "company": "Chittagong University of Engineering and Technology",
-      "location": "Chittagong",
-      "start": "2016-04",
-      "end": "2022-08",
+      "role": "Lecturer / Assistant Professor",
+      "company": "Chittagong University of Engineering and Technology (CUET)",
+      "location": "Chittagong, Bangladesh",
+      "start": "April 2016",
+      "end": "August 2022",
       "current": false,
       "bullets": [
         ""
@@ -124,32 +172,32 @@
   "education": [
     {
       "id": "ed-1",
-      "degree": "PhD, Electrical Engineering",
+      "degree": "PhD in Electrical Engineering",
       "institution": "University of Virginia",
       "location": "Charlottesville, VA",
       "start": "2022",
-      "end": "expected 2027",
-      "detail": "CGPA-3.71",
+      "end": "Expected Spring 2027",
+      "detail": "Dissertation: “A calculus for high dimensional single-cell measurements” · Advisor: Prof. Gustavo K. Rohde · CGPA: 3.71",
       "include": true
     },
     {
       "id": "ed-2",
-      "degree": "MSc, EEE",
-      "institution": "Chittagong University of Engineering and Technology",
+      "degree": "MSc in Electrical and Electronic Engineering",
+      "institution": "Chittagong University of Engineering and Technology (CUET)",
       "location": "",
-      "start": "",
+      "start": "2016",
       "end": "2021",
-      "detail": "CGPA-3.71",
+      "detail": "CGPA: 3.71",
       "include": true
     },
     {
-      "id": "ed-mtz6iwe2-2",
-      "degree": "BSc, EEE",
-      "institution": "Bangladesh University of Engineering and Technology",
+      "id": "ed-3",
+      "degree": "BSc in Electrical and Electronic Engineering",
+      "institution": "Bangladesh University of Engineering and Technology (BUET)",
       "location": "",
       "start": "2010",
       "end": "2015",
-      "detail": "CGPA-3.81",
+      "detail": "CGPA: 3.81",
       "include": true
     }
   ],
@@ -157,27 +205,37 @@
     {
       "id": "pr-1",
       "title": "FlowLOT: Linearized Optimal Transport for Flow Cytometry Analysis",
-      "description": "Developed deformation-based analytical models for population-level single-cell measurements and introduced linear optimal transport frameworks for classification, visualization, and continuous regression.",
+      "description": "Developed FlowLOT, an optimal transport-based framework that represents patient-level flow cytometry measurements as discrete probability distributions and maps them into compact, fixed-length embeddings. The framework enables interpretable analysis of high-dimensional single-cell data, supporting classification, visualization, and continuous outcome prediction within a unified mathematical framework. Demonstrated its utility for measurable residual disease (MRD) estimation in acute myeloid leukemia (AML), achieving transparent and biologically interpretable patient-level modeling.",
       "tech": [
-        "Classification",
-        "Visualization",
+        "Optimal Transport",
+        "Linear Optimal Transport",
+        "Flow Cytometry",
         "MRD Estimation",
+        "Computational Hematology",
+        "AML",
         "Python",
-        "High Performance Computing",
-        "Deep Learning"
+        "HPC",
+        "Deepsets",
+        "Pointnet++",
+        "DGCNN"
       ],
       "demo": "",
-      "source": "",
-      "paper": "",
+      "source": "https://github.com/naqibUVa/FlowLOT_v1",
+      "paper": "https://arxiv.org/abs/2609.17906",
       "include": true
     },
     {
       "id": "pr-2",
-      "title": "Iterative and Indirect Immunofluorescence Imaging(4i) of Metaphase Chromosome",
-      "description": "",
+      "title": "Metaphase Chromosome Analysis with Iterative Indirect Immunofluorescence Imaging (4i)",
+      "description": "Investigates how chromosome passenger complex (CPC) signaling and chromosome condensation are coordinated during mitosis using high-dimensional multiplex imaging. Develops optimal transport-based methods to quantify, visualize, and compare chromosome-scale variation across cell lines, studying how chromosome geometry influences protein localization and chromosomal organization.",
       "tech": [
+        "4i Imaging",
+        "Multiplex Imaging",
+        "Spatial Biology",
+        "Chromosome Biology",
+        "Chromosome Passenger Complex",
         "Python",
-        "Proteomics"
+        "Image Processing"
       ],
       "demo": "",
       "source": "",
@@ -186,448 +244,414 @@
     },
     {
       "id": "pr-3",
-      "title": "",
-      "description": "",
-      "tech": [],
+      "title": "Quantifying Nuclear Structures in Digital Pathology Using Transport-Based Morphometry (TBM)",
+      "description": "Develops transport-based morphometry (TBM) methods grounded in optimal transport theory to quantify nuclear chromatin organization directly from microscopy images. By representing nuclei relative to a common template, these methods provide interpretable and robust morphological descriptors that reveal cancer-associated structural variation across tissue types and imaging protocols.",
+      "tech": [
+        "Digital Pathology",
+        "Whole Slide Imaging",
+        "Transport-Based Morphometry",
+        "Optimal Transport",
+        "Nuclear Morphometry",
+        "Python"
+      ],
       "demo": "",
-      "source": "https://github.com/yourhandle/thesis-companion",
+      "source": "",
+      "paper": "https://doi.org/10.1002/cyto.a.24917",
+      "include": true
+    },
+    {
+      "id": "pr-4",
+      "title": "Computational Autofluorescence Correction for Cyclic Immunofluorescence (Genentech Summer Internship Project)",
+      "description": "Designed and implemented scalable computational imaging workflows for autofluorescence correction, artifact removal, and image restoration in high-plex cIF experiments. Leveraged Zarr-based storage, Dask, and parallel/distributed computing to analyze terabyte-scale whole-slide and TMA proteomics and spatial transcriptomics datasets generated on the Lunaphore COMET platform.",
+      "tech": [
+        "Multiplex Imaging",
+        "Spatial Proteomics",
+        "Single-Cell Analysis",
+        "Python",
+        "Cyclic-IF",
+        "Dask",
+        "Zarr"
+      ],
+      "demo": "",
+      "source": "",
       "paper": "",
+      "include": true
+    },
+    {
+      "id": "pr-5",
+      "title": "Biomedical Signal Processing and Clinical Image Analysis",
+      "description": "Investigations in biomedical signal processing and medical image analysis, including motion-corrupted photoplethysmography (PPG) heart-rate estimation during intense exercise, EEG sleep and motor imagery classification, retinal blood vessel segmentation using modified U-Net architectures, and brain MRI analysis.",
+      "tech": [
+        "PPG Signal Processing",
+        "EEG Analysis",
+        "Digital Pathology",
+        "Medical Imaging",
+        "Deep Learning",
+        "MATLAB",
+        "Python"
+      ],
+      "demo": "",
+      "source": "",
+      "paper": "https://doi.org/10.1007/s42979-023-02173-6",
       "include": false
     }
   ],
   "publications": [
     {
-      "id": "pub-sample-1",
-      "citationKey": "researcher2025sparse",
+      "id": "pub-1",
+      "citationKey": "shifat2025linear",
       "entryType": "article",
       "typeLabel": "Journal Article",
       "kind": "journal",
-      "title": "Sparse Attention Kernels for Long-Context Inference",
+      "title": "Linear Optimal Transport Subspaces for Point Set Classification",
       "authors": [
         {
-          "first": "Your",
-          "last": "Name",
-          "full": "Your Name"
+          "first": "Mohammad",
+          "last": "Shifat-E-Rabbi",
+          "full": "Mohammad Shifat-E-Rabbi"
         },
         {
-          "first": "A.",
-          "last": "Colleague",
-          "full": "A. Colleague"
+          "first": "Naqib Sad",
+          "last": "Pathan",
+          "full": "Naqib Sad Pathan"
         },
         {
-          "first": "A.",
-          "last": "Supervisor",
-          "full": "A. Supervisor"
+          "first": "Shiying",
+          "last": "Li",
+          "full": "Shiying Li"
+        },
+        {
+          "first": "Yan",
+          "last": "Zhuang",
+          "full": "Yan Zhuang"
+        },
+        {
+          "first": "Abu Hasnat Mohammad",
+          "last": "Rubaiyat",
+          "full": "Abu Hasnat Mohammad Rubaiyat"
+        },
+        {
+          "first": "Gustavo K.",
+          "last": "Rohde",
+          "full": "Gustavo K. Rohde"
         }
       ],
       "editors": [],
-      "venue": "Journal of Machine Learning Systems",
+      "venue": "Journal of Mathematical Imaging and Vision",
       "year": "2025",
-      "volume": "12",
-      "number": "3",
-      "pages": "441-468",
-      "doi": "10.0000/jmls.2025.0441",
-      "url": "",
+      "volume": "67",
+      "number": "4",
+      "pages": "art. 43",
+      "doi": "10.1007/s10851-025-01261-x",
+      "url": "https://arxiv.org/abs/2403.10015",
       "note": "",
       "address": "",
-      "publisher": "",
-      "include": false,
+      "publisher": "Springer",
+      "include": true,
       "fields": {}
     },
     {
-      "id": "pub-sample-2",
-      "citationKey": "researcher2024batching",
-      "entryType": "inproceedings",
-      "typeLabel": "Conference Paper",
-      "kind": "conference",
-      "title": "Batching Across Experts, Not Requests",
+      "id": "pub-2",
+      "citationKey": "shifat2025quantifying",
+      "entryType": "article",
+      "typeLabel": "Journal Article",
+      "kind": "journal",
+      "title": "Quantifying Nuclear Structures of Digital Pathology Images Across Cancers Using Transport-Based Morphometry",
       "authors": [
         {
-          "first": "Your",
-          "last": "Name",
-          "full": "Your Name"
+          "first": "Mohammad",
+          "last": "Shifat-E-Rabbi",
+          "full": "Mohammad Shifat-E-Rabbi"
         },
         {
-          "first": "A.",
-          "last": "Colleague",
-          "full": "A. Colleague"
+          "first": "Natasha",
+          "last": "Ironside",
+          "full": "Natasha Ironside"
+        },
+        {
+          "first": "Naqib Sad",
+          "last": "Pathan",
+          "full": "Naqib Sad Pathan"
+        },
+        {
+          "first": "John A.",
+          "last": "Ozolek",
+          "full": "John A. Ozolek"
+        },
+        {
+          "first": "Rajendra",
+          "last": "Singh",
+          "full": "Rajendra Singh"
+        },
+        {
+          "first": "Liron",
+          "last": "Pantanowitz",
+          "full": "Liron Pantanowitz"
+        },
+        {
+          "first": "Gustavo K.",
+          "last": "Rohde",
+          "full": "Gustavo K. Rohde"
         }
       ],
       "editors": [],
-      "venue": "NeurIPS Workshop on Efficient Machine Learning",
-      "year": "2024",
-      "volume": "",
-      "number": "",
-      "pages": "1-11",
-      "doi": "",
-      "url": "https://arxiv.org/abs/0000.00000",
-      "note": "Oral presentation",
+      "venue": "Cytometry Part A",
+      "year": "2025",
+      "volume": "107",
+      "number": "3",
+      "pages": "195–207",
+      "doi": "10.1002/cyto.a.24917",
+      "url": "https://doi.org/10.1002/cyto.a.24917",
+      "note": "",
       "address": "",
-      "publisher": "",
-      "include": false,
+      "publisher": "Wiley",
+      "include": true,
       "fields": {}
     },
     {
-      "id": "pub-sample-3",
-      "citationKey": "researcher2025profiler",
+      "id": "pub-3",
+      "citationKey": "hasan2023heart",
+      "entryType": "article",
+      "typeLabel": "Journal Article",
+      "kind": "journal",
+      "title": "Heart Rate Estimation from Wrist PPG Signal During Intense Physical Exercise",
+      "authors": [
+        {
+          "first": "Kamrul",
+          "last": "Hasan",
+          "full": "Kamrul Hasan"
+        },
+        {
+          "first": "Mehdi Hasan",
+          "last": "Chowdhury",
+          "full": "Mehdi Hasan Chowdhury"
+        },
+        {
+          "first": "Naqib Sad",
+          "last": "Pathan",
+          "full": "Naqib Sad Pathan"
+        },
+        {
+          "first": "Quazi Delwar",
+          "last": "Hossain",
+          "full": "Quazi Delwar Hossain"
+        }
+      ],
+      "editors": [],
+      "venue": "SN Computer Science",
+      "year": "2023",
+      "volume": "4",
+      "number": "6",
+      "pages": "art. 764",
+      "doi": "10.1007/s42979-023-02173-6",
+      "url": "https://doi.org/10.1007/s42979-023-02173-6",
+      "note": "",
+      "address": "",
+      "publisher": "Springer",
+      "include": true,
+      "fields": {}
+    },
+    {
+      "id": "pub-4",
+      "citationKey": "pathan2026flowlot",
       "entryType": "misc",
       "typeLabel": "Preprint",
       "kind": "other",
-      "title": "Cost Per Unit of Learning: Rethinking Training-Loop Profilers",
+      "title": "FlowLOT: Continuous Quantification and Measurable Residual Disease Prediction in Flow Cytometry",
       "authors": [
         {
-          "first": "Your",
-          "last": "Name",
-          "full": "Your Name"
+          "first": "Naqib Sad",
+          "last": "Pathan",
+          "full": "Naqib Sad Pathan"
         },
         {
-          "first": "A.",
-          "last": "Supervisor",
-          "full": "A. Supervisor"
+          "first": "Gustavo K.",
+          "last": "Rohde",
+          "full": "Gustavo K. Rohde"
         }
       ],
       "editors": [],
       "venue": "arXiv preprint",
-      "year": "2025",
+      "year": "2026",
       "volume": "",
       "number": "",
       "pages": "",
       "doi": "",
-      "url": "https://arxiv.org/abs/0000.00001",
-      "note": "Under review",
+      "url": "https://arxiv.org/abs/2609.17906",
+      "note": "arXiv:2609.17906",
       "address": "",
       "publisher": "",
-      "include": false,
+      "include": true,
       "fields": {}
     }
   ],
   "talks": [
     {
       "id": "tk-1",
-      "include": false,
-      "title": "Sparse Attention at Serving Time: What Actually Pays Off",
-      "kind": "keynote",
-      "event": "Regional ML Systems Summit",
-      "location": "Toronto, Canada",
-      "date": "Jun 2025",
+      "include": true,
+      "title": "A Computational Framework for Multiplexed Protein Imaging in Chromosome Spreads",
+      "kind": "invited",
+      "event": "The Systems Analysis of Stress-adapted Cancer Organelles (SASCO) Center",
+      "location": "University of Virginia, Charlottesville, VA",
+      "date": "Mar 2026",
       "coauthors": "",
-      "url": "https://yourname.dev/talks/serving-time",
-      "detail": "Opening keynote, ~400 attendees."
+      "url": "",
+      "detail": "Center seminar presentation on spatial multiplex imaging of metaphase chromosomes."
     },
     {
       "id": "tk-2",
-      "include": false,
-      "title": "Batching Across Experts, Not Requests",
+      "include": true,
+      "title": "A Standardized System for Quantifying Nuclear Chromatin Structure from Microscopy Images for Cancer Prediction",
       "kind": "oral",
-      "event": "NeurIPS Efficient ML Workshop",
-      "location": "Vancouver, Canada",
-      "date": "Dec 2024",
-      "coauthors": "with A. Colleague",
+      "event": "CYTO 2025",
+      "location": "Denver, Colorado",
+      "date": "2025",
+      "coauthors": "",
       "url": "",
-      "detail": ""
+      "detail": "International Society for Advancement of Cytometry (ISAC)."
     },
     {
       "id": "tk-3",
-      "include": false,
-      "title": "Cost Per Unit of Learning: A Profiler for Training Loops",
-      "kind": "poster",
-      "event": "MLSys 2024",
-      "location": "Santa Clara, CA",
-      "date": "May 2024",
+      "include": true,
+      "title": "Formulation of Predictive Models for Cytometry Data Using High-Dimensional Optimal Transport",
+      "kind": "oral",
+      "event": "CYTO 2025",
+      "location": "Denver, Colorado",
+      "date": "2025",
       "coauthors": "",
-      "url": "https://yourname.dev/posters/profkit.pdf",
-      "detail": ""
+      "url": "",
+      "detail": "International Society for Advancement of Cytometry (ISAC)."
     },
     {
       "id": "tk-4",
-      "include": false,
-      "title": "Efficiency Research Outside Big Labs",
+      "include": true,
+      "title": "Classification and Interpretation of High-Dimensional Distribution (HDD) in Medicine and Biology",
       "kind": "invited",
-      "event": "Department Colloquium, Another University",
-      "location": "Ithaca, NY",
-      "date": "Oct 2024",
+      "event": "The Systems Analysis of Stress-adapted Cancer Organelles (SASCO) Center",
+      "location": "University of Virginia, Charlottesville, VA",
+      "date": "Mar 2025",
       "coauthors": "",
       "url": "",
-      "detail": ""
+      "detail": "Invited presentation on optimal transport distribution classification in biology."
     }
   ],
-  "awards": [
-    {
-      "id": "aw-1",
-      "include": false,
-      "title": "Best Paper Award",
-      "year": "2025",
-      "issuer": "ACM Symposium on Cloud Computing",
-      "amount": "",
-      "location": "Boston, MA",
-      "url": "",
-      "detail": "1 of 3 selected from 412 submissions."
-    },
-    {
-      "id": "aw-2",
-      "include": false,
-      "title": "Graduate Research Fellowship",
-      "year": "2023",
-      "issuer": "Your University Graduate School",
-      "amount": "$42,000",
-      "location": "",
-      "url": "",
-      "detail": "Three-year competitive fellowship covering stipend and tuition."
-    },
-    {
-      "id": "aw-3",
-      "include": false,
-      "title": "Conference Travel Grant",
-      "year": "2024",
-      "issuer": "NeurIPS Foundation",
-      "amount": "$1,500",
-      "location": "",
-      "url": "",
-      "detail": ""
-    }
-  ],
-  "grants": [
-    {
-      "id": "gr-1",
-      "include": false,
-      "title": "Efficient Inference for Sparsely-Activated Models",
-      "agency": "National Science Foundation",
-      "role": "copi",
-      "amount": "$248,000",
-      "number": "IIS-2412345",
-      "start": "2024",
-      "end": "2027",
-      "url": "",
-      "detail": "Co-wrote the methods and broader-impacts sections."
-    },
-    {
-      "id": "gr-2",
-      "include": false,
-      "title": "Seed Award: Open Benchmarks for Serving Systems",
-      "agency": "University Research Office",
-      "role": "pi",
-      "amount": "$15,000",
-      "number": "",
-      "start": "2023",
-      "end": "2024",
-      "url": "",
-      "detail": ""
-    }
-  ],
+  "awards": [],
+  "grants": [],
   "teaching": [
     {
       "id": "te-1",
       "include": true,
-      "course": "CS 4820: Distributed Systems",
-      "role": "co-instructor",
-      "institution": "Your University",
-      "term": "Spring 2025",
-      "level": "Graduate · 62 students",
-      "rating": "4.8 / 5.0",
+      "course": "Digital Signal Processing",
+      "role": "instructor",
+      "institution": "Chittagong University of Engineering and Technology (CUET)",
+      "term": "2016 – 2022",
+      "level": "Undergraduate",
+      "rating": "",
       "bullets": [
-        "Rebuilt the second half of the syllabus around serving systems and wrote four new assignments.",
-        "Introduced an autograder that cut marking turnaround from nine days to two."
+        "Delivered core lectures on discrete-time signals, z-transforms, DFT/FFT, FIR/IIR filter design, and spectral estimation.",
+        "Conducted laboratory experiments and project mentoring in MATLAB."
       ]
     },
     {
       "id": "te-2",
       "include": true,
-      "course": "CS 2110: Data Structures",
-      "role": "ta",
-      "institution": "Your University",
-      "term": "Fall 2022 – Spring 2024",
-      "level": "Undergraduate · 240 students",
+      "course": "Signals and Systems",
+      "role": "instructor",
+      "institution": "Chittagong University of Engineering and Technology (CUET)",
+      "term": "2016 – 2022",
+      "level": "Undergraduate",
       "rating": "",
       "bullets": [
-        "Ran weekly discussion sections and held office hours for four consecutive semesters."
+        "Taught continuous and discrete time Fourier analysis, Laplace transforms, and linear time-invariant system properties."
+      ]
+    },
+    {
+      "id": "te-3",
+      "include": true,
+      "course": "Microprocessors and Interfacing",
+      "role": "instructor",
+      "institution": "Chittagong University of Engineering and Technology (CUET)",
+      "term": "2016 – 2022",
+      "level": "Undergraduate",
+      "rating": "",
+      "bullets": [
+        "Covered x86 assembly language programming, interrupt handling, memory interfacing, and hardware peripherals."
+      ]
+    },
+    {
+      "id": "te-4",
+      "include": true,
+      "course": "VLSI Technology",
+      "role": "instructor",
+      "institution": "Chittagong University of Engineering and Technology (CUET)",
+      "term": "2016 – 2022",
+      "level": "Undergraduate",
+      "rating": "",
+      "bullets": [
+        "Taught CMOS design, layout verification, and digital circuit simulation."
       ]
     }
   ],
-  "supervision": [
-    {
-      "id": "sup-1",
-      "include": true,
-      "student": "A. Student",
-      "level": "masters",
-      "role": "primary",
-      "institution": "Your University",
-      "project": "Quantisation-Aware Routing for Mixture-of-Experts Serving",
-      "start": "2024",
-      "end": "2025",
-      "outcome": "Thesis passed with distinction; now a PhD student at ETH Zürich",
-      "url": ""
-    }
-  ],
+  "supervision": [],
   "service": [
     {
       "id": "sv-1",
       "include": true,
-      "role": "Reviewer",
+      "role": "Peer Reviewer",
       "kind": "review",
-      "organisation": "NeurIPS, ICML, ICLR",
-      "start": "2023",
-      "end": "",
-      "detail": "~14 papers per year. Top Reviewer recognition, NeurIPS 2024."
-    },
-    {
-      "id": "sv-2",
-      "include": true,
-      "role": "Programme Committee",
-      "kind": "pc",
-      "organisation": "Workshop on Efficient Systems for Foundation Models",
-      "start": "2025",
-      "end": "",
-      "detail": ""
-    },
-    {
-      "id": "sv-3",
-      "include": true,
-      "role": "Graduate Student Representative",
-      "kind": "committee",
-      "organisation": "Department Curriculum Committee",
-      "start": "2023",
-      "end": "2025",
-      "detail": ""
-    }
-  ],
-  "editorial": [
-    {
-      "id": "ed-1",
-      "include": true,
-      "venue": "Transactions on Machine Learning Research",
-      "role": "reviewer",
-      "publisher": "JMLR",
-      "issue": "",
+      "organisation": "Cytometry Part A (Wiley / ISAC)",
       "start": "2024",
-      "end": "",
-      "volume": "10–12 manuscripts per year",
-      "url": ""
+      "end": "Present",
+      "detail": "Reviewing manuscripts on computational cytometry, morphometry, and biomedical image analysis."
     }
   ],
-  "organised": [
-    {
-      "id": "org-1",
-      "include": true,
-      "title": "Workshop on Efficient Inference at Scale",
-      "kind": "workshop",
-      "role": "Lead organiser",
-      "host": "NeurIPS 2025",
-      "location": "Vancouver, Canada",
-      "date": "Dec 2025",
-      "scale": "140 attendees · 46 submissions",
-      "url": "",
-      "detail": "Secured four invited speakers and $12,000 in industry sponsorship; proceedings published as a PMLR volume."
-    }
-  ],
-  "datasets": [
-    {
-      "id": "ds-1",
-      "include": true,
-      "name": "sparse-serve",
-      "kind": "software",
-      "role": "Lead author and maintainer",
-      "year": "2025",
-      "venue": "GitHub · PyPI",
-      "licence": "Apache-2.0",
-      "doi": "",
-      "impact": "1.2k stars · 40k downloads",
-      "url": "https://github.com/yourhandle/sparse-serve",
-      "demo": "",
-      "detail": "Serving runtime for sparsely activated models, with a scheduler that keeps expert weights resident across requests."
-    }
-  ],
-  "media": [
-    {
-      "id": "md-1",
-      "include": true,
-      "title": "The quiet race to make AI cheaper to run",
-      "kind": "press",
-      "outlet": "IEEE Spectrum",
-      "date": "Mar 2025",
-      "role": "Interviewed",
-      "url": "",
-      "detail": ""
-    }
-  ],
-  "development": [
-    {
-      "id": "dev-1",
-      "include": true,
-      "title": "Oxford Machine Learning Summer School",
-      "kind": "summerschool",
-      "organisation": "University of Oxford",
-      "date": "Jul 2024",
-      "location": "Oxford, UK",
-      "selectivity": "Selected from ~900 applicants",
-      "url": "",
-      "detail": ""
-    }
-  ],
+  "editorial": [],
+  "organised": [],
+  "datasets": [],
+  "media": [],
+  "development": [],
   "conferences": [
     {
       "id": "cf-1",
       "include": true,
-      "name": "MLSys",
-      "year": "2024",
-      "location": "Santa Clara, CA",
+      "name": "CYTO 2025",
+      "year": "2025",
+      "location": "Denver, CO",
       "mode": "inperson",
-      "role": "Student travel grant"
+      "role": "Presenter"
     }
   ],
   "memberships": [
     {
       "id": "mb-1",
       "include": true,
-      "organisation": "Association for Computing Machinery (ACM)",
-      "role": "Member",
-      "start": "2021",
-      "end": "",
+      "organisation": "IEEE / IEEE Computer Society",
+      "role": "Graduate Student Member",
+      "start": "2022",
+      "end": "Present",
       "number": "",
       "url": ""
     },
     {
       "id": "mb-2",
       "include": true,
-      "organisation": "IEEE Computer Society",
-      "role": "Graduate Student Member",
-      "start": "2022",
-      "end": "",
+      "organisation": "International Society for Advancement of Cytometry (ISAC)",
+      "role": "Member",
+      "start": "2024",
+      "end": "Present",
       "number": "",
       "url": ""
     }
   ],
-  "certifications": [
-    {
-      "id": "ce-1",
-      "include": true,
-      "name": "Deep Learning Specialisation",
-      "year": "2021",
-      "issuer": "DeepLearning.AI",
-      "credentialId": "",
-      "url": "",
-      "detail": ""
-    }
-  ],
-  "patents": [
-    {
-      "id": "pt-1",
-      "include": true,
-      "title": "Method and System for Expert-Parallel Inference Scheduling",
-      "number": "US 18/123,456",
-      "status": "pending",
-      "date": "Filed Feb 2025",
-      "inventors": "Your Name, A. Colleague",
-      "office": "USPTO",
-      "url": ""
-    }
-  ],
+  "certifications": [],
+  "patents": [],
   "languages": [
     {
       "id": "lg-1",
       "include": true,
       "language": "English",
       "level": "fluent",
-      "detail": "IELTS 8.0"
+      "detail": ""
     },
     {
       "id": "lg-2",
@@ -635,61 +659,51 @@
       "language": "Bengali",
       "level": "native",
       "detail": ""
-    },
-    {
-      "id": "lg-3",
-      "include": true,
-      "language": "Hindi",
-      "level": "professional",
-      "detail": ""
     }
   ],
-  "volunteering": [
-    {
-      "id": "vo-1",
-      "include": true,
-      "role": "Workshop Facilitator",
-      "organisation": "Local Girls Who Code chapter",
-      "location": "Boston, MA",
-      "start": "2023",
-      "end": "",
-      "bullets": [
-        "Run a termly introduction-to-Python session for around 30 secondary-school students."
-      ]
-    }
-  ],
+  "volunteering": [],
   "references": [
     {
-      "id": "rf-1",
+      "id": "ref-mu6hvzzs-2",
       "include": true,
-      "name": "Prof. A. Supervisor",
-      "position": "Professor of Computer Science",
-      "organisation": "Your University",
-      "relationship": "Doctoral advisor",
-      "email": "a.supervisor@university.edu",
-      "phone": ""
+      "name": "Gustavo Kunde Rohde",
+      "position": "Professor at BME and ECE",
+      "organisation": "University of Virginia",
+      "relationship": "Advisor",
+      "email": "gustavo@virginia.edu",
+      "phone": "Website: https://www.imagedatascience.com/"
     },
     {
-      "id": "rf-2",
+      "id": "ref-mu6j3muz-2",
       "include": true,
-      "name": "Dr. B. Manager",
-      "position": "Senior Research Scientist",
-      "organisation": "Industry Research Lab",
-      "relationship": "Internship host, summer 2024",
-      "email": "b.manager@lab.example.com",
-      "phone": ""
+      "name": "Kevin Janes",
+      "position": "Professor, Biomedical Engineering",
+      "organisation": "University of Virginia",
+      "relationship": "Research Core, SASCO",
+      "email": "kjanes@virginia.edu",
+      "phone": "Website: https://systemsbioe.org/"
+    },
+    {
+      "id": "ref-mu6j6o5m-4",
+      "include": true,
+      "name": "Todd Stukenberg",
+      "position": " Professor, Biochemistry and Molecular Genetics",
+      "organisation": "University of Virginia",
+      "relationship": "Research Core, SASCO",
+      "email": "pts7h@virginia.edu",
+      "phone": "Website: https://toddstuke.wixsite.com/stukelab"
     }
   ],
   "settings": {
     "theme": "compact",
-    "accent": "#be123c",
+    "accent": "#b6073f",
     "density": "normal",
     "showPhotoPlaceholder": false,
-    "pageSize": "letter",
-    "pageMargin": "normal",
+    "pageSize": "a4",
+    "pageMargin": "narrow",
     "fontPair": "garamond",
     "fontHead": "helvetica",
-    "fontScale": 1.06,
+    "fontScale": 1,
     "linkStyle": "name",
     "showIcons": true,
     "showMonogram": true,
@@ -700,22 +714,22 @@
       "projects",
       "publications",
       "talks",
+      "skills",
+      "teaching",
+      "service",
+      "memberships",
+      "languages",
       "awards",
       "grants",
-      "teaching",
       "supervision",
-      "service",
       "editorial",
       "organised",
       "datasets",
-      "skills",
+      "media",
+      "development",
+      "conferences",
       "certifications",
       "patents",
-      "memberships",
-      "media",
-      "conferences",
-      "development",
-      "languages",
       "volunteering",
       "references"
     ],
@@ -736,7 +750,7 @@
       "patents": false,
       "languages": false,
       "volunteering": false,
-      "references": false,
+      "references": true,
       "supervision": false,
       "editorial": false,
       "organised": false,
@@ -752,12 +766,12 @@
       "projects": "Projects",
       "publications": "Publications",
       "skills": "Skills",
-      "talks": "Presentations & Talks",
+      "talks": "Invited Talks & Presentations",
       "awards": "Awards & Honours",
       "grants": "Grants & Funding",
       "teaching": "Teaching",
       "service": "Professional Service",
-      "memberships": "Memberships & Affiliations",
+      "memberships": "Professional Memberships",
       "certifications": "Certifications & Training",
       "patents": "Patents",
       "languages": "Languages",
