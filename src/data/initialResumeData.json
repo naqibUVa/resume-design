@@ -1,0 +1,721 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "name": "Your Name",
+    "title": "PhD Candidate · Machine Learning & Systems",
+    "about": "Doctoral researcher working at the intersection of **machine learning** and **large-scale systems**. My work focuses on making inference cheap enough to run where the data already is. I care about results that survive contact with production.\n\nPreviously: research intern at two industry labs, maintainer of an open-source profiling toolkit.",
+    "contact": {
+      "email": "you@university.edu",
+      "phone": "+1 (555) 010-0000",
+      "location": "Boston, MA, USA"
+    },
+    "links": {
+      "github": "https://github.com/yourhandle",
+      "linkedin": "https://www.linkedin.com/in/yourhandle",
+      "scholar": "https://scholar.google.com/citations?user=XXXXXXXX",
+      "website": "https://yourname.dev"
+    }
+  },
+  "skills": [
+    {
+      "id": "sk-languages",
+      "category": "Languages",
+      "items": [
+        "Python",
+        "C++",
+        "JavaScript / TypeScript",
+        "Rust",
+        "SQL"
+      ],
+      "include": true
+    },
+    {
+      "id": "sk-ml",
+      "category": "Machine Learning",
+      "items": [
+        "PyTorch",
+        "JAX",
+        "Hugging Face",
+        "ONNX Runtime",
+        "CUDA"
+      ],
+      "include": true
+    },
+    {
+      "id": "sk-systems",
+      "category": "Systems & Tooling",
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "Ray",
+        "Postgres",
+        "Git",
+        "Linux"
+      ],
+      "include": true
+    },
+    {
+      "id": "sk-research",
+      "category": "Research",
+      "items": [
+        "Experimental design",
+        "LaTeX",
+        "Peer review",
+        "Technical writing"
+      ],
+      "include": true
+    }
+  ],
+  "experience": [
+    {
+      "id": "ex-1",
+      "role": "Graduate Research Assistant",
+      "company": "University Systems & Learning Lab",
+      "location": "Boston, MA",
+      "start": "2022-09",
+      "end": "",
+      "current": true,
+      "bullets": [
+        "Led a three-person effort on sparse attention kernels, cutting long-context inference latency by 41% at equal perplexity.",
+        "Built the lab's shared evaluation harness; now the default for four concurrent projects and ~200 GPU-hours/week.",
+        "Mentored two undergraduate researchers, both of whom are now co-authors on submitted work."
+      ],
+      "include": true
+    },
+    {
+      "id": "ex-2",
+      "role": "Research Intern, Efficiency Team",
+      "company": "Industry Research Lab",
+      "location": "Remote",
+      "start": "2024-05",
+      "end": "2024-08",
+      "current": false,
+      "bullets": [
+        "Prototyped a quantisation-aware fine-tuning pipeline adopted into the team's internal model release process.",
+        "Reduced evaluation turnaround from 6 hours to 25 minutes by rewriting the sharding layer."
+      ],
+      "include": true
+    },
+    {
+      "id": "ex-3",
+      "role": "Software Engineer",
+      "company": "Earlier Employer, Inc.",
+      "location": "New York, NY",
+      "start": "2019-07",
+      "end": "2022-08",
+      "current": false,
+      "bullets": [
+        "Owned the ingestion service handling 2.4B events/day; drove p99 from 900ms to 120ms.",
+        "Introduced the team's first load-testing suite and on-call runbook."
+      ],
+      "include": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "pr-1",
+      "title": "SparseServe",
+      "description": "Open-source inference server for **sparsely-activated transformers**. Ships a scheduler that batches across experts instead of across requests, which is where the throughput actually hides.\n\n- 3.1× throughput over a dense baseline at equal accuracy\n- Drop-in `openai`-compatible HTTP API\n- Used by three external research groups",
+      "tech": [
+        "Rust",
+        "CUDA",
+        "PyTorch",
+        "gRPC"
+      ],
+      "demo": "https://sparseserve.example.dev",
+      "source": "https://github.com/yourhandle/sparseserve",
+      "paper": "https://doi.org/10.1145/3589334.0000001",
+      "include": true
+    },
+    {
+      "id": "pr-2",
+      "title": "ProfKit",
+      "description": "A profiler for training loops that reports *cost per unit of learning* rather than raw FLOPs. Answers the question people actually have: is this run worth continuing?",
+      "tech": [
+        "Python",
+        "eBPF",
+        "React"
+      ],
+      "demo": "",
+      "source": "https://github.com/yourhandle/profkit",
+      "paper": "",
+      "include": true
+    },
+    {
+      "id": "pr-3",
+      "title": "Thesis Companion",
+      "description": "Small tool that keeps a BibTeX library, a reading log and a writing outline in one place. Built for myself; ended up being used by most of the lab.",
+      "tech": [
+        "TypeScript",
+        "SQLite",
+        "Tauri"
+      ],
+      "demo": "",
+      "source": "https://github.com/yourhandle/thesis-companion",
+      "paper": "",
+      "include": false
+    }
+  ],
+  "publications": [
+    {
+      "id": "pub-sample-1",
+      "citationKey": "researcher2025sparse",
+      "entryType": "article",
+      "typeLabel": "Journal Article",
+      "kind": "journal",
+      "title": "Sparse Attention Kernels for Long-Context Inference",
+      "authors": [
+        { "first": "Your", "last": "Name", "full": "Your Name" },
+        { "first": "A.", "last": "Colleague", "full": "A. Colleague" },
+        { "first": "A.", "last": "Supervisor", "full": "A. Supervisor" }
+      ],
+      "venue": "Journal of Machine Learning Systems",
+      "year": "2025",
+      "volume": "12",
+      "number": "3",
+      "pages": "441-468",
+      "doi": "10.0000/jmls.2025.0441",
+      "url": "",
+      "note": "",
+      "include": true,
+      "fields": {}
+    },
+    {
+      "id": "pub-sample-2",
+      "citationKey": "researcher2024batching",
+      "entryType": "inproceedings",
+      "typeLabel": "Conference Paper",
+      "kind": "conference",
+      "title": "Batching Across Experts, Not Requests",
+      "authors": [
+        { "first": "Your", "last": "Name", "full": "Your Name" },
+        { "first": "A.", "last": "Colleague", "full": "A. Colleague" }
+      ],
+      "venue": "NeurIPS Workshop on Efficient Machine Learning",
+      "year": "2024",
+      "volume": "",
+      "number": "",
+      "pages": "1-11",
+      "doi": "",
+      "url": "https://arxiv.org/abs/0000.00000",
+      "note": "Oral presentation",
+      "include": true,
+      "fields": {}
+    },
+    {
+      "id": "pub-sample-3",
+      "citationKey": "researcher2025profiler",
+      "entryType": "misc",
+      "typeLabel": "Preprint",
+      "kind": "other",
+      "title": "Cost Per Unit of Learning: Rethinking Training-Loop Profilers",
+      "authors": [
+        { "first": "Your", "last": "Name", "full": "Your Name" },
+        { "first": "A.", "last": "Supervisor", "full": "A. Supervisor" }
+      ],
+      "venue": "arXiv preprint",
+      "year": "2025",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/0000.00001",
+      "note": "Under review",
+      "include": true,
+      "fields": {}
+    }
+  ],
+  "education": [
+    {
+      "id": "ed-1",
+      "degree": "PhD, Computer Science",
+      "institution": "Your University",
+      "location": "Boston, MA",
+      "start": "2022",
+      "end": "expected 2027",
+      "detail": "Advisor: Prof. A. Supervisor. Thesis: efficient inference for sparsely-activated models.",
+      "include": true
+    },
+    {
+      "id": "ed-2",
+      "degree": "BSc, Computer Science and Mathematics",
+      "institution": "Undergraduate University",
+      "location": "Somewhere",
+      "start": "2015",
+      "end": "2019",
+      "detail": "First class honours. Thesis prize.",
+      "include": true
+    }
+  ],
+  "talks": [
+    {
+      "id": "tk-1",
+      "title": "Sparse Attention at Serving Time: What Actually Pays Off",
+      "kind": "keynote",
+      "event": "Regional ML Systems Summit",
+      "location": "Toronto, Canada",
+      "date": "Jun 2025",
+      "coauthors": "",
+      "url": "https://yourname.dev/talks/serving-time",
+      "detail": "Opening keynote, ~400 attendees.",
+      "include": true
+    },
+    {
+      "id": "tk-2",
+      "title": "Batching Across Experts, Not Requests",
+      "kind": "oral",
+      "event": "NeurIPS Efficient ML Workshop",
+      "location": "Vancouver, Canada",
+      "date": "Dec 2024",
+      "coauthors": "with A. Colleague",
+      "url": "",
+      "detail": "",
+      "include": true
+    },
+    {
+      "id": "tk-3",
+      "title": "Cost Per Unit of Learning: A Profiler for Training Loops",
+      "kind": "poster",
+      "event": "MLSys 2024",
+      "location": "Santa Clara, CA",
+      "date": "May 2024",
+      "coauthors": "",
+      "url": "https://yourname.dev/posters/profkit.pdf",
+      "detail": "",
+      "include": true
+    },
+    {
+      "id": "tk-4",
+      "title": "Efficiency Research Outside Big Labs",
+      "kind": "invited",
+      "event": "Department Colloquium, Another University",
+      "location": "Ithaca, NY",
+      "date": "Oct 2024",
+      "coauthors": "",
+      "url": "",
+      "detail": "",
+      "include": true
+    }
+  ],
+  "awards": [
+    {
+      "id": "aw-1",
+      "title": "Best Paper Award",
+      "year": "2025",
+      "issuer": "ACM Symposium on Cloud Computing",
+      "amount": "",
+      "location": "Boston, MA",
+      "url": "",
+      "detail": "1 of 3 selected from 412 submissions.",
+      "include": true
+    },
+    {
+      "id": "aw-2",
+      "title": "Graduate Research Fellowship",
+      "year": "2023",
+      "issuer": "Your University Graduate School",
+      "amount": "$42,000",
+      "location": "",
+      "url": "",
+      "detail": "Three-year competitive fellowship covering stipend and tuition.",
+      "include": true
+    },
+    {
+      "id": "aw-3",
+      "title": "Conference Travel Grant",
+      "year": "2024",
+      "issuer": "NeurIPS Foundation",
+      "amount": "$1,500",
+      "location": "",
+      "url": "",
+      "detail": "",
+      "include": true
+    }
+  ],
+  "grants": [
+    {
+      "id": "gr-1",
+      "title": "Efficient Inference for Sparsely-Activated Models",
+      "agency": "National Science Foundation",
+      "role": "copi",
+      "amount": "$248,000",
+      "number": "IIS-2412345",
+      "start": "2024",
+      "end": "2027",
+      "url": "",
+      "detail": "Co-wrote the methods and broader-impacts sections.",
+      "include": true
+    },
+    {
+      "id": "gr-2",
+      "title": "Seed Award: Open Benchmarks for Serving Systems",
+      "agency": "University Research Office",
+      "role": "pi",
+      "amount": "$15,000",
+      "number": "",
+      "start": "2023",
+      "end": "2024",
+      "url": "",
+      "detail": "",
+      "include": true
+    }
+  ],
+  "teaching": [
+    {
+      "id": "te-1",
+      "course": "CS 4820: Distributed Systems",
+      "role": "co-instructor",
+      "institution": "Your University",
+      "term": "Spring 2025",
+      "level": "Graduate · 62 students",
+      "rating": "4.8 / 5.0",
+      "bullets": [
+        "Rebuilt the second half of the syllabus around serving systems and wrote four new assignments.",
+        "Introduced an autograder that cut marking turnaround from nine days to two."
+      ],
+      "include": true
+    },
+    {
+      "id": "te-2",
+      "course": "CS 2110: Data Structures",
+      "role": "ta",
+      "institution": "Your University",
+      "term": "Fall 2022 – Spring 2024",
+      "level": "Undergraduate · 240 students",
+      "rating": "",
+      "bullets": [
+        "Ran weekly discussion sections and held office hours for four consecutive semesters."
+      ],
+      "include": true
+    }
+  ],
+  "supervision": [
+    {
+      "id": "sup-1",
+      "student": "A. Student",
+      "level": "masters",
+      "role": "primary",
+      "institution": "Your University",
+      "project": "Quantisation-Aware Routing for Mixture-of-Experts Serving",
+      "start": "2024",
+      "end": "2025",
+      "outcome": "Thesis passed with distinction; now a PhD student at ETH Zürich",
+      "url": "",
+      "include": true
+    }
+  ],
+  "service": [
+    {
+      "id": "sv-1",
+      "role": "Reviewer",
+      "kind": "review",
+      "organisation": "NeurIPS, ICML, ICLR",
+      "start": "2023",
+      "end": "",
+      "detail": "~14 papers per year. Top Reviewer recognition, NeurIPS 2024.",
+      "include": true
+    },
+    {
+      "id": "sv-2",
+      "role": "Programme Committee",
+      "kind": "pc",
+      "organisation": "Workshop on Efficient Systems for Foundation Models",
+      "start": "2025",
+      "end": "",
+      "detail": "",
+      "include": true
+    },
+    {
+      "id": "sv-3",
+      "role": "Graduate Student Representative",
+      "kind": "committee",
+      "organisation": "Department Curriculum Committee",
+      "start": "2023",
+      "end": "2025",
+      "detail": "",
+      "include": true
+    }
+  ],
+  "editorial": [
+    {
+      "id": "ed-1",
+      "venue": "Transactions on Machine Learning Research",
+      "role": "reviewer",
+      "publisher": "JMLR",
+      "issue": "",
+      "start": "2024",
+      "end": "",
+      "volume": "10–12 manuscripts per year",
+      "url": "",
+      "include": true
+    }
+  ],
+  "organised": [
+    {
+      "id": "org-1",
+      "title": "Workshop on Efficient Inference at Scale",
+      "kind": "workshop",
+      "role": "Lead organiser",
+      "host": "NeurIPS 2025",
+      "location": "Vancouver, Canada",
+      "date": "Dec 2025",
+      "scale": "140 attendees · 46 submissions",
+      "url": "",
+      "detail": "Secured four invited speakers and $12,000 in industry sponsorship; proceedings published as a PMLR volume.",
+      "include": true
+    }
+  ],
+  "datasets": [
+    {
+      "id": "ds-1",
+      "name": "sparse-serve",
+      "kind": "software",
+      "role": "Lead author and maintainer",
+      "year": "2025",
+      "venue": "GitHub · PyPI",
+      "licence": "Apache-2.0",
+      "doi": "",
+      "impact": "1.2k stars · 40k downloads",
+      "url": "https://github.com/yourhandle/sparse-serve",
+      "demo": "",
+      "detail": "Serving runtime for sparsely activated models, with a scheduler that keeps expert weights resident across requests.",
+      "include": true
+    }
+  ],
+  "memberships": [
+    {
+      "id": "mb-1",
+      "organisation": "Association for Computing Machinery (ACM)",
+      "role": "Member",
+      "start": "2021",
+      "end": "",
+      "number": "",
+      "url": "",
+      "include": true
+    },
+    {
+      "id": "mb-2",
+      "organisation": "IEEE Computer Society",
+      "role": "Graduate Student Member",
+      "start": "2022",
+      "end": "",
+      "number": "",
+      "url": "",
+      "include": true
+    }
+  ],
+  "certifications": [
+    {
+      "id": "ce-1",
+      "name": "Deep Learning Specialisation",
+      "year": "2021",
+      "issuer": "DeepLearning.AI",
+      "credentialId": "",
+      "url": "",
+      "detail": "",
+      "include": true
+    }
+  ],
+  "patents": [
+    {
+      "id": "pt-1",
+      "title": "Method and System for Expert-Parallel Inference Scheduling",
+      "number": "US 18/123,456",
+      "status": "pending",
+      "date": "Filed Feb 2025",
+      "inventors": "Your Name, A. Colleague",
+      "office": "USPTO",
+      "url": "",
+      "include": true
+    }
+  ],
+  "media": [
+    {
+      "id": "md-1",
+      "title": "The quiet race to make AI cheaper to run",
+      "kind": "press",
+      "outlet": "IEEE Spectrum",
+      "date": "Mar 2025",
+      "role": "Interviewed",
+      "url": "",
+      "detail": "",
+      "include": true
+    }
+  ],
+  "conferences": [
+    {
+      "id": "cf-1",
+      "name": "MLSys",
+      "year": "2024",
+      "location": "Santa Clara, CA",
+      "mode": "inperson",
+      "role": "Student travel grant",
+      "include": true
+    }
+  ],
+  "development": [
+    {
+      "id": "dev-1",
+      "title": "Oxford Machine Learning Summer School",
+      "kind": "summerschool",
+      "organisation": "University of Oxford",
+      "date": "Jul 2024",
+      "location": "Oxford, UK",
+      "selectivity": "Selected from ~900 applicants",
+      "url": "",
+      "detail": "",
+      "include": true
+    }
+  ],
+  "languages": [
+    {
+      "id": "lg-1",
+      "language": "English",
+      "level": "fluent",
+      "detail": "IELTS 8.0",
+      "include": true
+    },
+    {
+      "id": "lg-2",
+      "language": "Bengali",
+      "level": "native",
+      "detail": "",
+      "include": true
+    },
+    {
+      "id": "lg-3",
+      "language": "Hindi",
+      "level": "professional",
+      "detail": "",
+      "include": true
+    }
+  ],
+  "volunteering": [
+    {
+      "id": "vo-1",
+      "role": "Workshop Facilitator",
+      "organisation": "Local Girls Who Code chapter",
+      "location": "Boston, MA",
+      "start": "2023",
+      "end": "",
+      "bullets": [
+        "Run a termly introduction-to-Python session for around 30 secondary-school students."
+      ],
+      "include": true
+    }
+  ],
+  "references": [
+    {
+      "id": "rf-1",
+      "name": "Prof. A. Supervisor",
+      "position": "Professor of Computer Science",
+      "organisation": "Your University",
+      "relationship": "Doctoral advisor",
+      "email": "a.supervisor@university.edu",
+      "phone": "",
+      "include": true
+    },
+    {
+      "id": "rf-2",
+      "name": "Dr. B. Manager",
+      "position": "Senior Research Scientist",
+      "organisation": "Industry Research Lab",
+      "relationship": "Internship host, summer 2024",
+      "email": "b.manager@lab.example.com",
+      "phone": "",
+      "include": true
+    }
+  ],
+  "settings": {
+    "theme": "academic",
+    "accent": "#4f46e5",
+    "density": "normal",
+    "pageSize": "letter",
+    "pageMargin": "theme",
+    "fontPair": "theme",
+    "fontHead": "pair",
+    "fontScale": 1,
+    "linkStyle": "name",
+    "showPhotoPlaceholder": false,
+    "showIcons": true,
+    "showMonogram": true,
+    "sectionOrder": [
+      "about",
+      "education",
+      "experience",
+      "projects",
+      "publications",
+      "talks",
+      "awards",
+      "grants",
+      "teaching",
+      "supervision",
+      "service",
+      "editorial",
+      "organised",
+      "datasets",
+      "skills",
+      "certifications",
+      "patents",
+      "memberships",
+      "media",
+      "conferences",
+      "development",
+      "languages",
+      "volunteering",
+      "references"
+    ],
+    "sections": {
+      "about": true,
+      "education": true,
+      "experience": true,
+      "projects": true,
+      "publications": true,
+      "skills": true,
+      "talks": true,
+      "awards": true,
+      "grants": true,
+      "teaching": true,
+      "service": true,
+      "memberships": true,
+      "certifications": false,
+      "patents": false,
+      "languages": true,
+      "volunteering": false,
+      "references": false,
+      "supervision": false,
+      "editorial": false,
+      "organised": false,
+      "datasets": false,
+      "media": false,
+      "development": false,
+      "conferences": false
+    },
+    "sectionTitles": {
+      "about": "About Me",
+      "education": "Education",
+      "experience": "Experience",
+      "projects": "Projects",
+      "publications": "Publications",
+      "skills": "Skills",
+      "talks": "Presentations & Talks",
+      "awards": "Awards & Honours",
+      "grants": "Grants & Funding",
+      "teaching": "Teaching",
+      "service": "Professional Service",
+      "memberships": "Memberships & Affiliations",
+      "certifications": "Certifications & Training",
+      "patents": "Patents",
+      "languages": "Languages",
+      "volunteering": "Volunteering & Outreach",
+      "references": "References",
+      "supervision": "Student Supervision",
+      "editorial": "Editorial & Review Boards",
+      "organised": "Workshops & Events Organised",
+      "datasets": "Datasets & Software",
+      "media": "Media & Press",
+      "development": "Professional Development",
+      "conferences": "Conferences Attended"
+    }
+  }
+}

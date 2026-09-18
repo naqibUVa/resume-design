@@ -1,0 +1,107 @@
+% ============================================================
+%  sampleBibtex.bib
+%
+%  Placeholder library, loaded by the "Load sample" button in the
+%  BibTeX importer. Replace the whole thing with an export from
+%  Zotero / Mendeley / Google Scholar, or paste your own entries.
+%
+%  The parser understands:
+%    - @article, @inproceedings, @incollection, @book, @phdthesis,
+%      @mastersthesis, @techreport, @misc, @unpublished, @patent
+%    - brace-delimited and quote-delimited values
+%    - nested braces  ->  title = {A {BERT}-style Model}
+%    - @string abbreviations and # concatenation
+%    - "and"-separated author lists in both "Last, First" and
+%      "First Last" order
+%    - common LaTeX accents and escapes  ->  {\"o}, \'{e}, \&, ---
+%    - % comments, and entries spread over any number of lines
+% ============================================================
+
+@string{jmlr = {Journal of Machine Learning Research}}
+
+@article{doe2025sparse,
+  author  = {Doe, Jane and Smith, John A. and M{\"u}ller, Hans},
+  title   = {Sparse Attention Kernels for Long-Context Inference},
+  journal = jmlr,
+  year    = {2025},
+  volume  = {26},
+  number  = {14},
+  pages   = {1--38},
+  doi     = {10.5555/3712345.3712399},
+  url     = {https://jmlr.org/papers/v26/doe25a.html},
+  abstract = {We introduce a family of sparse attention kernels that
+              preserve perplexity while reducing latency by 41\%.},
+  keywords = {efficiency, attention, systems}
+}
+
+@inproceedings{doe2024quantise,
+  author    = {Jane Doe and Priya Raman and John A. Smith},
+  title     = {Quantisation-Aware Fine-Tuning Without the Accuracy Cliff},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year      = {2024},
+  pages     = {8821--8840},
+  address   = {Vienna, Austria},
+  publisher = {PMLR},
+  url       = {https://proceedings.mlr.press/v235/doe24a.html}
+}
+
+@inproceedings{raman2024profiling,
+  author    = {Raman, Priya and Doe, Jane},
+  title     = {Profiling Training Runs by Cost per Unit of Learning},
+  booktitle = {Proceedings of the ACM Symposium on Cloud Computing (SoCC)},
+  year      = {2024},
+  pages     = {212--225},
+  doi       = {10.1145/3698038.3698061}
+}
+
+@article{smith2023survey,
+  author  = {Smith, John A. and Doe, Jane and Okonkwo, Ada and Lindqvist, Erik},
+  title   = {A Survey of Efficient Inference for Mixture-of-Experts Models},
+  journal = {ACM Computing Surveys},
+  year    = {2023},
+  volume  = {56},
+  number  = {3},
+  pages   = {1--41},
+  doi     = {10.1145/3624010}
+}
+
+@incollection{doe2023chapter,
+  author    = {Doe, Jane},
+  title     = {Systems Constraints in Modern Model Serving},
+  booktitle = {Handbook of Practical Machine Learning Systems},
+  editor    = {Alvarez, Mar{\'i}a and Chen, Wei},
+  publisher = {Cambridge University Press},
+  year      = {2023},
+  pages     = {145--172},
+  isbn      = {978-1-108-00000-0}
+}
+
+@phdthesis{doe2027thesis,
+  author  = {Doe, Jane},
+  title   = {Efficient Inference for Sparsely-Activated Neural Networks},
+  school  = {Your University},
+  year    = {2027},
+  type    = {PhD thesis},
+  address = {Boston, MA, USA},
+  note    = {In preparation}
+}
+
+@misc{doe2025preprint,
+  author       = {Doe, Jane and Okonkwo, Ada},
+  title        = {Scheduling Across Experts, Not Across Requests},
+  year         = {2025},
+  eprint       = {2505.01234},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  url          = {https://arxiv.org/abs/2505.01234},
+  note         = {Preprint, under review}
+}
+
+@techreport{lab2024report,
+  author      = {Doe, Jane and Smith, John A.},
+  title       = {Benchmarking Sparse Serving Stacks: A Reproducibility Report},
+  institution = {University Systems \& Learning Lab},
+  year        = {2024},
+  number      = {TR-2024-07},
+  url         = {https://lab.example.edu/tr/2024-07.pdf}
+}

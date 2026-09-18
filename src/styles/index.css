@@ -1,0 +1,357 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   1. App chrome baseline
+   ============================================================ */
+
+@layer base {
+  /* No `color-scheme` here any more, and no prefers-color-scheme block: light
+     versus dark is owned by shared/themes.css, which sets it from `data-mode`
+     on <html>. Pinning it here would have locked the editor light and left the
+     native controls — scrollbars, checkboxes, date pickers — bright white on
+     the Midnight palette. */
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-ui-bg text-ui-text antialiased;
+    font-family: theme('fontFamily.tech');
+  }
+
+  /* Keyboard focus that is visible but not shouty. Tailwind's ring wants a
+     colour it can fade, and these are var() tokens, so the offset colour is
+     the page and the ring is the accent at full strength. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ui-accent ring-offset-1 ring-offset-ui-bg;
+  }
+
+  ::selection {
+    @apply bg-ui-accent-soft text-ui-text;
+  }
+}
+
+@layer components {
+  /* ---- Editor form primitives ---- */
+
+  .field-label {
+    @apply mb-1 block text-[11px] font-semibold uppercase tracking-wider text-ui-muted;
+  }
+
+  .field-input {
+    @apply w-full rounded-lg border border-ui-line bg-ui-surface px-3 py-2 text-sm text-ui-text
+           placeholder:text-ui-faint
+           focus:border-ui-accent focus:outline-none focus:ring-2 focus:ring-ui-accent;
+  }
+
+  .field-textarea {
+    @apply field-input resize-y leading-relaxed;
+    min-height: 5rem;
+  }
+
+  /* Buttons are sized from the density tokens rather than from a fixed py-2, so
+     compact mode — and the automatic compact on a short screen — actually takes
+     height out of the toolbars instead of only shrinking the theme picker. */
+  .btn {
+    @apply inline-flex h-control items-center justify-center gap-1.5 rounded-lg border border-ui-line
+           bg-ui-surface px-control-x text-sm font-medium text-ui-text shadow-panel transition
+           hover:border-ui-line-strong hover:bg-ui-hover
+           focus-visible:ring-2 focus-visible:ring-ui-accent
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply border-transparent bg-ui-accent text-ui-on-accent hover:border-transparent hover:bg-ui-accent-hover;
+  }
+
+  .btn-ghost {
+    @apply border-transparent bg-transparent shadow-none hover:bg-ui-hover;
+  }
+
+  .btn-danger {
+    @apply text-ui-danger hover:border-ui-danger hover:bg-ui-danger-soft;
+  }
+
+  .btn-xs {
+    @apply gap-1 rounded-md px-2 py-1 text-xs;
+  }
+
+  .panel {
+    @apply rounded-xl border border-ui-line bg-ui-surface shadow-panel;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-ui-line bg-ui-hover
+           px-2 py-0.5 text-xs font-medium text-ui-muted;
+  }
+
+  /* Thin scrollbars in the two scrolling columns. */
+  .scroll-slim {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+  .scroll-slim::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .scroll-slim::-webkit-scrollbar-thumb {
+    @apply rounded-full border-[3px] border-solid border-transparent bg-ui-line-strong bg-clip-content;
+  }
+  .scroll-slim::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* ============================================================
+   2. The résumé "paper"
+
+   Themes style their own internals; these rules only own the sheet
+   geometry so that what you see on screen matches what prints.
+
+   THE CONTENT / CHROME LINE
+   The editor around the sheet is themed by shared/themes.css. The sheet is
+   not, and must not be: it is a document on its way to a printer, and a
+   résumé that comes out of the Midnight palette looking different from one
+   that came out of Paper is a bug, not a feature. So the sheet re-declares
+   white paper and a light colour-scheme for its own subtree, and every rule
+   inside src/components/themes/** uses the literal `ink` scale rather than a
+   theme token. `#print-portal` gets the same treatment because it holds the
+   second, un-nested copy that is the thing actually printed.
+   ============================================================ */
+
+/* Only `color-scheme`. Each theme root already declares its own text colour
+   (ink-800, ink-900 or pure black, depending on the design), so setting one
+   here would silently flatten all ten to the same grey. */
+.resume-paper,
+#print-portal {
+  color-scheme: light;
+}
+
+/* Sheet size and margins come from the Page setup controls. The variables are
+   written to :root by ResumePreview (see src/data/pageSetup.js); the fallbacks
+   are US Letter and the theme's own margin, which is what renders before the
+   first layout effect runs and in the standalone HTML export.
+
+   --rf-pad-* is only set when the user overrides the margin, so on "Theme
+   default" the theme's own --page-margin still wins and there is nothing to
+   measure around. */
+.resume-paper {
+  width: var(--page-w, 8.5in);
+  min-height: var(--page-h, 11in);
+  background: #fff;
+  padding: var(--rf-pad-v, var(--page-margin, 0.75in)) var(--rf-pad-h, var(--page-margin, 0.75in));
+  box-sizing: border-box;
+}
+
+/* Anything that must not be split across two printed pages. */
+.avoid-break {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Section headings should never be the last thing on a page. */
+.resume-heading {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* Explicit page break, inserted by the "Page break" control. */
+.force-break {
+  break-before: page;
+  page-break-before: always;
+}
+
+/* ---- Typography picker override ----
+
+   Each theme hard-codes its own faces as Tailwind `font-*` utilities, on the
+   article and on individual headings. To let the picker win we have to beat a
+   utility class on a descendant, and there is no selector that does that
+   without `!important` short of rewriting all ten themes' typography into
+   variables.
+
+   The cost is contained: the attributes are only present once the user picks
+   something other than "Theme default", so the default path never matches
+   these rules at all. See fontAttrs() in src/data/fontStacks.js.
+
+   Body and headings are gated separately — `data-font-body` and
+   `data-font-head` — because the two are chosen independently. Sharing one
+   attribute would mean that picking only a heading face left the gate closed,
+   and that `var(--rf-head)` could resolve with no value: an invalid
+   `font-family` computes to `inherit`, which would quietly drag headings back
+   to the body face. Two gates, two variables, neither able to see the other. */
+.resume-paper[data-font-body],
+.resume-paper[data-font-body] :not(h1):not(h2):not(h3):not(h1 *):not(h2 *):not(h3 *) {
+  font-family: var(--rf-body) !important;
+}
+
+.resume-paper[data-font-head] :is(h1, h2, h3),
+.resume-paper[data-font-head] :is(h1, h2, h3) * {
+  font-family: var(--rf-head) !important;
+}
+
+/* Monospace stays monospace whatever the pairing — a code span set in Garamond
+   is not what anybody meant by "change the font". */
+.resume-paper[data-font-body] :is(code, kbd, samp, pre),
+.resume-paper[data-font-head] :is(code, kbd, samp, pre) {
+  font-family: theme('fontFamily.mono') !important;
+}
+
+/* Editorial theme: drop cap on the first paragraph of the About block.
+   `initial-letter` is the correct property but Chrome only shipped it behind a
+   prefix, so the float fallback does the work everywhere. */
+.editorial-lede > p:first-child::first-letter {
+  float: left;
+  font-size: 3.1em;
+  line-height: 0.82;
+  padding-right: 0.06em;
+  padding-top: 0.06em;
+  font-weight: 500;
+  color: var(--accent, #4f46e5);
+}
+
+/* Markdown output inside project descriptions. */
+.md :is(strong) {
+  font-weight: 650;
+}
+.md :is(em) {
+  font-style: italic;
+}
+.md :is(code) {
+  font-family: theme('fontFamily.mono');
+  font-size: 0.92em;
+  padding: 0.05em 0.3em;
+  border-radius: 3px;
+  /* Markdown renders both on the sheet and in the editor's project preview, so
+     the tint is derived from whatever colour the text already is: near-black
+     ink on paper, near-white on a dark editor surface. A fixed dark wash was
+     invisible in the second case. */
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+.md :is(a) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.md ul {
+  list-style: disc;
+  padding-left: 1.15em;
+  margin: 0.25em 0;
+}
+.md li {
+  margin: 0.1em 0;
+}
+
+/* ============================================================
+   3. Print / PDF export
+
+   The whole export path is native print-to-PDF. That is what keeps
+   the output *vector* (real selectable text, not a screenshot) and
+   keeps <a href> links clickable — a canvas-rasterising library
+   would lose both.
+
+   ResumePreview portals a second copy of the active theme into
+   #print-portal, outside the app's flex/scroll containers. On screen
+   it is hidden; when printing it is the only thing shown. That avoids
+   fighting with `overflow: hidden` ancestors, which is the usual
+   reason print output comes out clipped to one page.
+   ============================================================ */
+
+#print-portal {
+  display: none;
+}
+
+/* Margins live on the *page box*, not on .resume-paper, because only the page
+   box repeats: padding on the sheet opens a gap above the first line and below
+   the last one and leaves every interior page break flush against the paper
+   edge. See src/data/pageSetup.js for the whole argument.
+
+   This rule is the fallback for the split second before the app boots, and for
+   a print triggered with JavaScript off. The real values — chosen page size,
+   chosen margin, and the full-bleed exception — are generated at runtime into
+   <style id="rf-page-setup">, which comes later in the cascade and wins. */
+@page {
+  size: Letter portrait;
+  margin: 0.75in;
+}
+
+@media print {
+  html,
+  body {
+    height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  /* Hide the entire application shell, show only the portal. */
+  body > *:not(#print-portal) {
+    display: none !important;
+  }
+
+  /* shared/theme-switcher.css draws a fixed accent hairline as `body::before`
+     while the toolbars are hidden. A pseudo-element is not a child, so the
+     rule above does not reach it, and `position: fixed` in print means it
+     would be stamped across the top of the exported PDF. Themes must not be
+     visible in the output at all, so it goes here. */
+  [data-chrome='hidden'] body::before {
+    display: none !important;
+  }
+
+  /* Same reasoning for the floating theme dock, in the case where an app has
+     no [data-theme-controls] slot: it is a direct child of <body>, so the rule
+     above already removes it, but say so rather than rely on it. */
+  .appsuite-theme-controls {
+    display: none !important;
+  }
+
+  #print-portal {
+    display: block !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .resume-paper {
+    width: auto !important;
+    min-height: 0 !important;
+    /* Paired with the @page margin above: the page box supplies the margins,
+       the sheet supplies none, so they cannot stack. */
+    padding: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  /* Print backgrounds (badges, rules, accent bars) instead of dropping them. */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Widow/orphan control for body copy. */
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
+/* ============================================================
+   4. Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

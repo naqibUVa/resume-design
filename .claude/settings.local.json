@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(awk 'NR>=250 && NR<=520' src/components/preview/ThemeSelector.jsx)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(node /tmp/pagecheck/pagecheck.mjs)",
+      "Bash(node /Users/pathann2/Resume_design/.pagecheck.mjs)",
+      "Bash(/usr/bin/python3 -c ' *)",
+      "Bash(/usr/bin/python3 inspect.py academic-letter-theme.pdf academic-a4-narrow.pdf)",
+      "Bash(/usr/bin/python3 inspect.py *.pdf)",
+      "Bash(/usr/bin/python3 -)",
+      "Bash(/usr/bin/python3 /tmp/pagecheck/inspect.py /tmp/pagecheck/*.pdf)",
+      "Bash(node --input-type=module -e ' *)",
+      "Bash(pkill -f \"vite\")"
+    ]
+  }
+}

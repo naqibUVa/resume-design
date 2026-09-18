@@ -1,0 +1,775 @@
+{
+  "schemaVersion": 2,
+  "profile": {
+    "name": "Naqib Sad Pathan",
+    "title": "PhD Candidate · Optimal Transport, Computational Biology, Single Cell Data Analysis ",
+    "about": "Doctoral researcher at the intersection of optimal transport, machine learning, mathematical modeling, and computational biology, developing generalizable methods for high-dimensional cellular measurements with applications to flow cytometry, multiplex imaging, and biomedical discovery.",
+    "contact": {
+      "email": "qpb3vt@virginia.edu",
+      "phone": "+1 4347605312",
+      "location": "Charlottesville, VA, USA"
+    },
+    "links": {
+      "website": "",
+      "github": "https://github.com/naqibUVa",
+      "linkedin": "https://www.linkedin.com/in/naqib-sad-pathan-4b0871286/",
+      "scholar": "https://scholar.google.com/citations?hl=en&user=NUPZdZoAAAAJ",
+      "orcid": "",
+      "researchgate": "",
+      "semanticscholar": "",
+      "dblp": "",
+      "arxiv": "",
+      "osf": "",
+      "zenodo": "",
+      "gitlab": "",
+      "huggingface": "",
+      "kaggle": "",
+      "stackoverflow": "",
+      "codepen": "",
+      "twitter": "",
+      "bluesky": "",
+      "mastodon": "",
+      "youtube": "",
+      "instagram": "",
+      "medium": "",
+      "blog": ""
+    }
+  },
+  "skills": [
+    {
+      "id": "sk-languages",
+      "category": "Languages",
+      "items": [
+        "Python",
+        "C++",
+        "JavaScript / TypeScript",
+        "MATLAB"
+      ],
+      "include": true
+    },
+    {
+      "id": "sk-ml",
+      "category": "Machine Learning",
+      "items": [
+        "PyTorch",
+        "Hugging Face",
+        "CUDA"
+      ],
+      "include": true
+    },
+    {
+      "id": "sk-systems",
+      "category": "Systems & Tooling",
+      "items": [
+        "Git",
+        "Linux",
+        "Docker",
+        "Bash scripting"
+      ],
+      "include": true
+    },
+    {
+      "id": "sk-research",
+      "category": "Research",
+      "items": [
+        "Experimental design",
+        "LaTeX",
+        "Peer review",
+        "Technical writing"
+      ],
+      "include": false
+    }
+  ],
+  "experience": [
+    {
+      "id": "ex-1",
+      "role": "Graduate Research Assistant",
+      "company": "University Systems & Learning Lab",
+      "location": "Charlottesville, VA",
+      "start": "2022",
+      "end": "7",
+      "current": true,
+      "bullets": [
+        ""
+      ],
+      "include": true
+    },
+    {
+      "id": "ex-2",
+      "role": "Research Intern, Digital Pathology",
+      "company": "Genentech",
+      "location": "South San Francisco",
+      "start": "Summer 2026",
+      "end": "",
+      "current": false,
+      "bullets": [
+        ""
+      ],
+      "include": true
+    },
+    {
+      "id": "ex-3",
+      "role": "Lecturer and then Assistant Professor",
+      "company": "Chittagong University of Engineering and Technology",
+      "location": "Chittagong",
+      "start": "2016-04",
+      "end": "2022-08",
+      "current": false,
+      "bullets": [
+        ""
+      ],
+      "include": true
+    }
+  ],
+  "education": [
+    {
+      "id": "ed-1",
+      "degree": "PhD, Electrical Engineering",
+      "institution": "University of Virginia",
+      "location": "Charlottesville, VA",
+      "start": "2022",
+      "end": "expected 2027",
+      "detail": "CGPA-3.71",
+      "include": true
+    },
+    {
+      "id": "ed-2",
+      "degree": "MSc, EEE",
+      "institution": "Chittagong University of Engineering and Technology",
+      "location": "",
+      "start": "",
+      "end": "2021",
+      "detail": "CGPA-3.71",
+      "include": true
+    },
+    {
+      "id": "ed-mtz6iwe2-2",
+      "degree": "BSc, EEE",
+      "institution": "Bangladesh University of Engineering and Technology",
+      "location": "",
+      "start": "2010",
+      "end": "2015",
+      "detail": "CGPA-3.81",
+      "include": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "pr-1",
+      "title": "FlowLOT: Linearized Optimal Transport for Flow Cytometry Analysis",
+      "description": "Developed deformation-based analytical models for population-level single-cell measurements and introduced linear optimal transport frameworks for classification, visualization, and continuous regression.",
+      "tech": [
+        "Classification",
+        "Visualization",
+        "MRD Estimation",
+        "Python",
+        "High Performance Computing",
+        "Deep Learning"
+      ],
+      "demo": "",
+      "source": "",
+      "paper": "",
+      "include": true
+    },
+    {
+      "id": "pr-2",
+      "title": "Iterative and Indirect Immunofluorescence Imaging(4i) of Metaphase Chromosome",
+      "description": "",
+      "tech": [
+        "Python",
+        "Proteomics"
+      ],
+      "demo": "",
+      "source": "",
+      "paper": "",
+      "include": true
+    },
+    {
+      "id": "pr-3",
+      "title": "",
+      "description": "",
+      "tech": [],
+      "demo": "",
+      "source": "https://github.com/yourhandle/thesis-companion",
+      "paper": "",
+      "include": false
+    }
+  ],
+  "publications": [
+    {
+      "id": "pub-sample-1",
+      "citationKey": "researcher2025sparse",
+      "entryType": "article",
+      "typeLabel": "Journal Article",
+      "kind": "journal",
+      "title": "Sparse Attention Kernels for Long-Context Inference",
+      "authors": [
+        {
+          "first": "Your",
+          "last": "Name",
+          "full": "Your Name"
+        },
+        {
+          "first": "A.",
+          "last": "Colleague",
+          "full": "A. Colleague"
+        },
+        {
+          "first": "A.",
+          "last": "Supervisor",
+          "full": "A. Supervisor"
+        }
+      ],
+      "editors": [],
+      "venue": "Journal of Machine Learning Systems",
+      "year": "2025",
+      "volume": "12",
+      "number": "3",
+      "pages": "441-468",
+      "doi": "10.0000/jmls.2025.0441",
+      "url": "",
+      "note": "",
+      "address": "",
+      "publisher": "",
+      "include": false,
+      "fields": {}
+    },
+    {
+      "id": "pub-sample-2",
+      "citationKey": "researcher2024batching",
+      "entryType": "inproceedings",
+      "typeLabel": "Conference Paper",
+      "kind": "conference",
+      "title": "Batching Across Experts, Not Requests",
+      "authors": [
+        {
+          "first": "Your",
+          "last": "Name",
+          "full": "Your Name"
+        },
+        {
+          "first": "A.",
+          "last": "Colleague",
+          "full": "A. Colleague"
+        }
+      ],
+      "editors": [],
+      "venue": "NeurIPS Workshop on Efficient Machine Learning",
+      "year": "2024",
+      "volume": "",
+      "number": "",
+      "pages": "1-11",
+      "doi": "",
+      "url": "https://arxiv.org/abs/0000.00000",
+      "note": "Oral presentation",
+      "address": "",
+      "publisher": "",
+      "include": false,
+      "fields": {}
+    },
+    {
+      "id": "pub-sample-3",
+      "citationKey": "researcher2025profiler",
+      "entryType": "misc",
+      "typeLabel": "Preprint",
+      "kind": "other",
+      "title": "Cost Per Unit of Learning: Rethinking Training-Loop Profilers",
+      "authors": [
+        {
+          "first": "Your",
+          "last": "Name",
+          "full": "Your Name"
+        },
+        {
+          "first": "A.",
+          "last": "Supervisor",
+          "full": "A. Supervisor"
+        }
+      ],
+      "editors": [],
+      "venue": "arXiv preprint",
+      "year": "2025",
+      "volume": "",
+      "number": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/0000.00001",
+      "note": "Under review",
+      "address": "",
+      "publisher": "",
+      "include": false,
+      "fields": {}
+    }
+  ],
+  "talks": [
+    {
+      "id": "tk-1",
+      "include": false,
+      "title": "Sparse Attention at Serving Time: What Actually Pays Off",
+      "kind": "keynote",
+      "event": "Regional ML Systems Summit",
+      "location": "Toronto, Canada",
+      "date": "Jun 2025",
+      "coauthors": "",
+      "url": "https://yourname.dev/talks/serving-time",
+      "detail": "Opening keynote, ~400 attendees."
+    },
+    {
+      "id": "tk-2",
+      "include": false,
+      "title": "Batching Across Experts, Not Requests",
+      "kind": "oral",
+      "event": "NeurIPS Efficient ML Workshop",
+      "location": "Vancouver, Canada",
+      "date": "Dec 2024",
+      "coauthors": "with A. Colleague",
+      "url": "",
+      "detail": ""
+    },
+    {
+      "id": "tk-3",
+      "include": false,
+      "title": "Cost Per Unit of Learning: A Profiler for Training Loops",
+      "kind": "poster",
+      "event": "MLSys 2024",
+      "location": "Santa Clara, CA",
+      "date": "May 2024",
+      "coauthors": "",
+      "url": "https://yourname.dev/posters/profkit.pdf",
+      "detail": ""
+    },
+    {
+      "id": "tk-4",
+      "include": false,
+      "title": "Efficiency Research Outside Big Labs",
+      "kind": "invited",
+      "event": "Department Colloquium, Another University",
+      "location": "Ithaca, NY",
+      "date": "Oct 2024",
+      "coauthors": "",
+      "url": "",
+      "detail": ""
+    }
+  ],
+  "awards": [
+    {
+      "id": "aw-1",
+      "include": false,
+      "title": "Best Paper Award",
+      "year": "2025",
+      "issuer": "ACM Symposium on Cloud Computing",
+      "amount": "",
+      "location": "Boston, MA",
+      "url": "",
+      "detail": "1 of 3 selected from 412 submissions."
+    },
+    {
+      "id": "aw-2",
+      "include": false,
+      "title": "Graduate Research Fellowship",
+      "year": "2023",
+      "issuer": "Your University Graduate School",
+      "amount": "$42,000",
+      "location": "",
+      "url": "",
+      "detail": "Three-year competitive fellowship covering stipend and tuition."
+    },
+    {
+      "id": "aw-3",
+      "include": false,
+      "title": "Conference Travel Grant",
+      "year": "2024",
+      "issuer": "NeurIPS Foundation",
+      "amount": "$1,500",
+      "location": "",
+      "url": "",
+      "detail": ""
+    }
+  ],
+  "grants": [
+    {
+      "id": "gr-1",
+      "include": false,
+      "title": "Efficient Inference for Sparsely-Activated Models",
+      "agency": "National Science Foundation",
+      "role": "copi",
+      "amount": "$248,000",
+      "number": "IIS-2412345",
+      "start": "2024",
+      "end": "2027",
+      "url": "",
+      "detail": "Co-wrote the methods and broader-impacts sections."
+    },
+    {
+      "id": "gr-2",
+      "include": false,
+      "title": "Seed Award: Open Benchmarks for Serving Systems",
+      "agency": "University Research Office",
+      "role": "pi",
+      "amount": "$15,000",
+      "number": "",
+      "start": "2023",
+      "end": "2024",
+      "url": "",
+      "detail": ""
+    }
+  ],
+  "teaching": [
+    {
+      "id": "te-1",
+      "include": true,
+      "course": "CS 4820: Distributed Systems",
+      "role": "co-instructor",
+      "institution": "Your University",
+      "term": "Spring 2025",
+      "level": "Graduate · 62 students",
+      "rating": "4.8 / 5.0",
+      "bullets": [
+        "Rebuilt the second half of the syllabus around serving systems and wrote four new assignments.",
+        "Introduced an autograder that cut marking turnaround from nine days to two."
+      ]
+    },
+    {
+      "id": "te-2",
+      "include": true,
+      "course": "CS 2110: Data Structures",
+      "role": "ta",
+      "institution": "Your University",
+      "term": "Fall 2022 – Spring 2024",
+      "level": "Undergraduate · 240 students",
+      "rating": "",
+      "bullets": [
+        "Ran weekly discussion sections and held office hours for four consecutive semesters."
+      ]
+    }
+  ],
+  "supervision": [
+    {
+      "id": "sup-1",
+      "include": true,
+      "student": "A. Student",
+      "level": "masters",
+      "role": "primary",
+      "institution": "Your University",
+      "project": "Quantisation-Aware Routing for Mixture-of-Experts Serving",
+      "start": "2024",
+      "end": "2025",
+      "outcome": "Thesis passed with distinction; now a PhD student at ETH Zürich",
+      "url": ""
+    }
+  ],
+  "service": [
+    {
+      "id": "sv-1",
+      "include": true,
+      "role": "Reviewer",
+      "kind": "review",
+      "organisation": "NeurIPS, ICML, ICLR",
+      "start": "2023",
+      "end": "",
+      "detail": "~14 papers per year. Top Reviewer recognition, NeurIPS 2024."
+    },
+    {
+      "id": "sv-2",
+      "include": true,
+      "role": "Programme Committee",
+      "kind": "pc",
+      "organisation": "Workshop on Efficient Systems for Foundation Models",
+      "start": "2025",
+      "end": "",
+      "detail": ""
+    },
+    {
+      "id": "sv-3",
+      "include": true,
+      "role": "Graduate Student Representative",
+      "kind": "committee",
+      "organisation": "Department Curriculum Committee",
+      "start": "2023",
+      "end": "2025",
+      "detail": ""
+    }
+  ],
+  "editorial": [
+    {
+      "id": "ed-1",
+      "include": true,
+      "venue": "Transactions on Machine Learning Research",
+      "role": "reviewer",
+      "publisher": "JMLR",
+      "issue": "",
+      "start": "2024",
+      "end": "",
+      "volume": "10–12 manuscripts per year",
+      "url": ""
+    }
+  ],
+  "organised": [
+    {
+      "id": "org-1",
+      "include": true,
+      "title": "Workshop on Efficient Inference at Scale",
+      "kind": "workshop",
+      "role": "Lead organiser",
+      "host": "NeurIPS 2025",
+      "location": "Vancouver, Canada",
+      "date": "Dec 2025",
+      "scale": "140 attendees · 46 submissions",
+      "url": "",
+      "detail": "Secured four invited speakers and $12,000 in industry sponsorship; proceedings published as a PMLR volume."
+    }
+  ],
+  "datasets": [
+    {
+      "id": "ds-1",
+      "include": true,
+      "name": "sparse-serve",
+      "kind": "software",
+      "role": "Lead author and maintainer",
+      "year": "2025",
+      "venue": "GitHub · PyPI",
+      "licence": "Apache-2.0",
+      "doi": "",
+      "impact": "1.2k stars · 40k downloads",
+      "url": "https://github.com/yourhandle/sparse-serve",
+      "demo": "",
+      "detail": "Serving runtime for sparsely activated models, with a scheduler that keeps expert weights resident across requests."
+    }
+  ],
+  "media": [
+    {
+      "id": "md-1",
+      "include": true,
+      "title": "The quiet race to make AI cheaper to run",
+      "kind": "press",
+      "outlet": "IEEE Spectrum",
+      "date": "Mar 2025",
+      "role": "Interviewed",
+      "url": "",
+      "detail": ""
+    }
+  ],
+  "development": [
+    {
+      "id": "dev-1",
+      "include": true,
+      "title": "Oxford Machine Learning Summer School",
+      "kind": "summerschool",
+      "organisation": "University of Oxford",
+      "date": "Jul 2024",
+      "location": "Oxford, UK",
+      "selectivity": "Selected from ~900 applicants",
+      "url": "",
+      "detail": ""
+    }
+  ],
+  "conferences": [
+    {
+      "id": "cf-1",
+      "include": true,
+      "name": "MLSys",
+      "year": "2024",
+      "location": "Santa Clara, CA",
+      "mode": "inperson",
+      "role": "Student travel grant"
+    }
+  ],
+  "memberships": [
+    {
+      "id": "mb-1",
+      "include": true,
+      "organisation": "Association for Computing Machinery (ACM)",
+      "role": "Member",
+      "start": "2021",
+      "end": "",
+      "number": "",
+      "url": ""
+    },
+    {
+      "id": "mb-2",
+      "include": true,
+      "organisation": "IEEE Computer Society",
+      "role": "Graduate Student Member",
+      "start": "2022",
+      "end": "",
+      "number": "",
+      "url": ""
+    }
+  ],
+  "certifications": [
+    {
+      "id": "ce-1",
+      "include": true,
+      "name": "Deep Learning Specialisation",
+      "year": "2021",
+      "issuer": "DeepLearning.AI",
+      "credentialId": "",
+      "url": "",
+      "detail": ""
+    }
+  ],
+  "patents": [
+    {
+      "id": "pt-1",
+      "include": true,
+      "title": "Method and System for Expert-Parallel Inference Scheduling",
+      "number": "US 18/123,456",
+      "status": "pending",
+      "date": "Filed Feb 2025",
+      "inventors": "Your Name, A. Colleague",
+      "office": "USPTO",
+      "url": ""
+    }
+  ],
+  "languages": [
+    {
+      "id": "lg-1",
+      "include": true,
+      "language": "English",
+      "level": "fluent",
+      "detail": "IELTS 8.0"
+    },
+    {
+      "id": "lg-2",
+      "include": true,
+      "language": "Bengali",
+      "level": "native",
+      "detail": ""
+    },
+    {
+      "id": "lg-3",
+      "include": true,
+      "language": "Hindi",
+      "level": "professional",
+      "detail": ""
+    }
+  ],
+  "volunteering": [
+    {
+      "id": "vo-1",
+      "include": true,
+      "role": "Workshop Facilitator",
+      "organisation": "Local Girls Who Code chapter",
+      "location": "Boston, MA",
+      "start": "2023",
+      "end": "",
+      "bullets": [
+        "Run a termly introduction-to-Python session for around 30 secondary-school students."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "rf-1",
+      "include": true,
+      "name": "Prof. A. Supervisor",
+      "position": "Professor of Computer Science",
+      "organisation": "Your University",
+      "relationship": "Doctoral advisor",
+      "email": "a.supervisor@university.edu",
+      "phone": ""
+    },
+    {
+      "id": "rf-2",
+      "include": true,
+      "name": "Dr. B. Manager",
+      "position": "Senior Research Scientist",
+      "organisation": "Industry Research Lab",
+      "relationship": "Internship host, summer 2024",
+      "email": "b.manager@lab.example.com",
+      "phone": ""
+    }
+  ],
+  "settings": {
+    "theme": "compact",
+    "accent": "#be123c",
+    "density": "normal",
+    "showPhotoPlaceholder": false,
+    "pageSize": "letter",
+    "pageMargin": "normal",
+    "fontPair": "garamond",
+    "fontHead": "helvetica",
+    "fontScale": 1.06,
+    "linkStyle": "name",
+    "showIcons": true,
+    "showMonogram": true,
+    "sectionOrder": [
+      "about",
+      "education",
+      "experience",
+      "projects",
+      "publications",
+      "talks",
+      "awards",
+      "grants",
+      "teaching",
+      "supervision",
+      "service",
+      "editorial",
+      "organised",
+      "datasets",
+      "skills",
+      "certifications",
+      "patents",
+      "memberships",
+      "media",
+      "conferences",
+      "development",
+      "languages",
+      "volunteering",
+      "references"
+    ],
+    "sections": {
+      "about": true,
+      "education": true,
+      "experience": true,
+      "projects": true,
+      "publications": false,
+      "skills": true,
+      "talks": false,
+      "awards": false,
+      "grants": false,
+      "teaching": false,
+      "service": false,
+      "memberships": false,
+      "certifications": false,
+      "patents": false,
+      "languages": false,
+      "volunteering": false,
+      "references": false,
+      "supervision": false,
+      "editorial": false,
+      "organised": false,
+      "datasets": false,
+      "media": false,
+      "development": false,
+      "conferences": false
+    },
+    "sectionTitles": {
+      "about": "About Me",
+      "education": "Education",
+      "experience": "Experience",
+      "projects": "Projects",
+      "publications": "Publications",
+      "skills": "Skills",
+      "talks": "Presentations & Talks",
+      "awards": "Awards & Honours",
+      "grants": "Grants & Funding",
+      "teaching": "Teaching",
+      "service": "Professional Service",
+      "memberships": "Memberships & Affiliations",
+      "certifications": "Certifications & Training",
+      "patents": "Patents",
+      "languages": "Languages",
+      "volunteering": "Volunteering & Outreach",
+      "references": "References",
+      "supervision": "Student Supervision",
+      "editorial": "Editorial & Review Boards",
+      "organised": "Workshops & Events Organised",
+      "datasets": "Datasets & Software",
+      "media": "Media & Press",
+      "development": "Professional Development",
+      "conferences": "Conferences Attended"
+    }
+  }
+}
