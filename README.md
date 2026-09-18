@@ -1,6 +1,12 @@
 # Résumé & CV Builder
 
-A local-first web app for maintaining **one** set of career data and printing several
+[![Live App](https://img.shields.io/badge/Live%20Web%20App-Build%20CV%20Online-indigo?style=for-the-badge&logo=githubpages)](https://naqibuva.github.io/resume-design/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> 🚀 **Live Online Version**: Build, customize, and export your CV directly in your browser with zero setup:  
+> 👉 **[https://naqibuva.github.io/resume-design/](https://naqibuva.github.io/resume-design/)**
+
+A local-first and web-ready app for maintaining **one** set of career data and printing several
 different documents from it — an academic CV with every publication, an ATS-safe
 one-pager, a modern engineering résumé — without ever retyping or deleting anything.
 
@@ -12,6 +18,7 @@ output with clickable links.
 
 Your document is kept as an ordinary file in `data/resume.json` inside this
 folder, so it survives a cleared cache and travels with the project.
+
 
 ---
 
