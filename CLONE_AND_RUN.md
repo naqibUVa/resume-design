@@ -51,13 +51,13 @@ Then visit `http://localhost:8000`.
 
 ---
 
-## 🔒 How to Upload as a Private Project to GitHub
+## 🌐 How to Upload as a Public Project to GitHub
 
-To publish this project to your GitHub account (`naqibUVa`) as a **Private** repository:
+To publish this project to your GitHub account (`naqibUVa`) as a **Public** repository:
 
 1. Go to [github.com/new](https://github.com/new).
-2. Set the **Repository name** to: `resume-design` (or your preferred name).
-3. Select **Private**.
+2. Set the **Repository name** to: `resume-design`.
+3. Select **Public**.
 4. Leave "Add a README", ".gitignore", and license **unchecked** (we already have them).
 5. Click **Create repository**.
 6. In your terminal inside this folder (`App_Suites/apps/01-Resume-Design`), run:
